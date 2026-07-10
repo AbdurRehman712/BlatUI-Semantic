@@ -1,0 +1,60 @@
+/* ============================================================
+ * BlatUI Semantic — * PROGRESS (progress)
+ * Auto-generated from semantic-base.css (line 1259)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .progress {
+      appearance: none;
+      width: 100%;
+      height: 0.75rem;
+      border-radius: var(--radius-full);
+      background-color: var(--color-muted);
+      overflow: hidden;
+    }
+  
+    .progress::-webkit-progress-bar {
+      background-color: var(--color-muted);
+      border-radius: var(--radius-full);
+    }
+  
+    .progress::-webkit-progress-value {
+      background-color: var(--color-primary);
+      border-radius: var(--radius-full);
+      transition: width 300ms ease;
+    }
+  
+    .progress::-moz-progress-bar {
+      background-color: var(--color-primary);
+      border-radius: var(--radius-full);
+    }
+  
+    .progress-primary::-webkit-progress-value { background-color: var(--color-primary); }
+    .progress-primary::-moz-progress-bar { background-color: var(--color-primary); }
+  
+    .progress-secondary::-webkit-progress-value { background-color: var(--color-secondary); }
+    .progress-secondary::-moz-progress-bar { background-color: var(--color-secondary); }
+  
+    .progress-accent::-webkit-progress-value { background-color: var(--color-accent); }
+    .progress-accent::-moz-progress-bar { background-color: var(--color-accent); }
+  
+    .progress-info::-webkit-progress-value { background-color: var(--color-info); }
+    .progress-info::-moz-progress-bar { background-color: var(--color-info); }
+  
+    .progress-success::-webkit-progress-value { background-color: var(--color-success); }
+    .progress-success::-moz-progress-bar { background-color: var(--color-success); }
+  
+    .progress-warning::-webkit-progress-value { background-color: var(--color-warning); }
+    .progress-warning::-moz-progress-bar { background-color: var(--color-warning); }
+  
+    .progress-error::-webkit-progress-value { background-color: var(--color-error); }
+    .progress-error::-moz-progress-bar { background-color: var(--color-error); }
+  
+    .progress-xs { height: 0.25rem; }
+    .progress-sm { height: 0.5rem; }
+    .progress-md { height: 0.75rem; }
+    .progress-lg { height: 1rem; }
+    .progress-xl { height: 1.25rem; }
+}

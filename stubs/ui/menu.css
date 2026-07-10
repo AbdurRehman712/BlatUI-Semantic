@@ -1,0 +1,97 @@
+/* ============================================================
+ * BlatUI Semantic — * MENU (menu)
+ * Auto-generated from semantic-base.css (line 2267)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 0.125rem;
+      padding: 0.5rem;
+      list-style: none;
+      font-size: 0.875rem;
+    }
+  
+    .menu li {
+      display: flex;
+      flex-direction: column;
+      gap: 0.125rem;
+    }
+  
+    .menu li a,
+    .menu li button,
+    .menu li > .menu-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-md);
+      color: var(--color-foreground);
+      text-decoration: none;
+      transition: background-color 150ms ease;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-size: inherit;
+      text-align: left;
+      width: 100%;
+    }
+  
+    .menu li a:hover,
+    .menu li button:hover,
+    .menu li > .menu-item:hover {
+      background-color: var(--color-muted);
+    }
+  
+    .menu li a:active,
+    .menu li button:active,
+    .menu li > .menu-item:active {
+      background-color: color-mix(in srgb, var(--color-muted) 80%, black);
+    }
+  
+    .menu-title {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-muted-foreground);
+      pointer-events: none;
+    }
+  
+    .menu-disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  
+    .menu-xs { font-size: 0.75rem; }
+    .menu-xs li a,
+    .menu-xs li button,
+    .menu-xs li > .menu-item { padding: 0.25rem 0.5rem; }
+  
+    .menu-sm { font-size: 0.8125rem; }
+    .menu-sm li a,
+    .menu-sm li button,
+    .menu-sm li > .menu-item { padding: 0.375rem 0.625rem; }
+  
+    .menu-md { font-size: 0.875rem; }
+    .menu-md li a,
+    .menu-md li button,
+    .menu-md li > .menu-item { padding: 0.5rem 0.75rem; }
+  
+    .menu-lg { font-size: 1rem; }
+    .menu-lg li a,
+    .menu-lg li button,
+    .menu-lg li > .menu-item { padding: 0.625rem 1rem; }
+  
+    .menu-vertical {
+      flex-direction: column;
+    }
+    .menu-horizontal {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+}

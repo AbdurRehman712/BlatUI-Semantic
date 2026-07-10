@@ -1,0 +1,37 @@
+/* ============================================================
+ * BlatUI Semantic — * MARQUEE (marquee)
+ * Auto-generated from semantic-base.css (line 4910)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .marquee {
+      display: flex;
+      overflow: hidden;
+      gap: 1rem;
+      mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    }
+    .marquee-content {
+      display: flex;
+      gap: 1rem;
+      animation: marquee-scroll var(--marquee-speed, 30s) linear infinite;
+      flex-shrink: 0;
+      min-width: 100%;
+    }
+    .marquee-content + .marquee-content { animation-delay: calc(var(--marquee-speed, 30s) / -2); }
+    @keyframes marquee-scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-100%); }
+    }
+    .marquee-vertical { flex-direction: column; }
+    .marquee-vertical .marquee-content {
+      flex-direction: column;
+      animation-name: marquee-scroll-vertical;
+    }
+    @keyframes marquee-scroll-vertical {
+      from { transform: translateY(0); }
+      to { transform: translateY(-100%); }
+    }
+}

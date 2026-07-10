@@ -1,0 +1,76 @@
+/* ============================================================
+ * BlatUI Semantic — * SIDEBAR (sidebar)
+ * Auto-generated from semantic-base.css (line 3730)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .sidebar {
+      display: flex;
+      flex-direction: column;
+      width: 16rem;
+      min-height: 100%;
+      background-color: var(--color-background);
+      border-right: 1px solid var(--color-border);
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+    .sidebar-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .sidebar-content { flex: 1; padding: 0.5rem; overflow-y: auto; }
+    .sidebar-footer {
+      padding: 0.75rem 1rem;
+      border-top: 1px solid var(--color-border);
+    }
+    .sidebar-group { margin-bottom: 0.5rem; }
+    .sidebar-group-title {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-muted-foreground);
+    }
+    .sidebar-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-md);
+      font-size: 0.875rem;
+      color: var(--color-foreground);
+      text-decoration: none;
+      transition: background-color 150ms ease;
+      cursor: pointer;
+    }
+    .sidebar-item:hover { background-color: var(--color-muted); }
+    .sidebar-item.active,
+    .sidebar-item-active {
+      background-color: color-mix(in srgb, var(--color-primary) 10%, transparent);
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+    .sidebar-separator {
+      height: 1px;
+      background-color: var(--color-border);
+      margin: 0.5rem 0.75rem;
+    }
+    .sidebar-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 39;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .sidebar-trigger { cursor: pointer; }
+    .sidebar-collapsed { width: 4rem; }
+    .sidebar-collapsed .sidebar-header { justify-content: center; padding: 0.75rem; }
+    .sidebar-collapsed .sidebar-item { justify-content: center; padding: 0.625rem; }
+    .sidebar-collapsed .sidebar-group-title,
+    .sidebar-collapsed .sidebar-item span { display: none; }
+}

@@ -1,0 +1,23 @@
+/* ============================================================
+ * BlatUI Semantic — * REASONING (reasoning) — AI reasoning block
+ * Auto-generated from semantic-base.css (line 5711)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .reasoning {
+      padding: 0.75rem;
+      background-color: var(--color-muted);
+      border-left: 3px solid var(--color-primary);
+      border-radius: var(--radius-md);
+      font-size: 0.875rem;
+      line-height: 1.5;
+      color: var(--color-muted-foreground);
+    }
+    .reasoning-header {
+      font-weight: 600;
+      color: var(--color-foreground);
+      margin-bottom: 0.375rem;
+    }
+}

@@ -1,0 +1,17 @@
+/* ============================================================
+ * BlatUI Semantic — * STREAMING TEXT (streaming-text)
+ * Auto-generated from semantic-base.css (line 5049)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .streaming-text .char {
+      display: inline-block;
+      animation: char-appear 50ms ease-out both;
+    }
+    @keyframes char-appear {
+      from { opacity: 0; filter: blur(4px); transform: translateY(4px); }
+      to { opacity: 1; filter: blur(0); transform: translateY(0); }
+    }
+}

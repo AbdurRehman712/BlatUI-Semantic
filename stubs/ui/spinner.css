@@ -1,0 +1,26 @@
+/* ============================================================
+ * BlatUI Semantic — * SPINNER (spinner)
+ * Auto-generated from semantic-base.css (line 5840)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .spinner {
+      display: inline-block;
+      width: 1.25rem;
+      height: 1.25rem;
+      border: 2px solid var(--color-border);
+      border-top-color: var(--color-primary);
+      border-radius: var(--radius-full);
+      animation: spinner-rotate 0.6s linear infinite;
+    }
+    @keyframes spinner-rotate {
+      to { transform: rotate(360deg); }
+    }
+    .spinner-xs { width: 0.75rem; height: 0.75rem; border-width: 1.5px; }
+    .spinner-sm { width: 1rem; height: 1rem; border-width: 2px; }
+    .spinner-md { width: 1.25rem; height: 1.25rem; border-width: 2px; }
+    .spinner-lg { width: 1.5rem; height: 1.5rem; border-width: 3px; }
+    .spinner-xl { width: 2rem; height: 2rem; border-width: 3px; }
+}

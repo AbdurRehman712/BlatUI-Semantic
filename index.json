@@ -1,0 +1,4615 @@
+{
+    "$schema": "https://blatui.remix-it.com/schema.json",
+    "name": "blatui-semantic",
+    "description": "Complete FlyonUI-inspired semantic component registry for BlatUI. All 180 components mapped to pure semantic CSS classes with Alpine.js interactivity.",
+    "homepage": "https://github.com/your-org/blatui-semantic",
+    "components": [
+        {
+            "name": "accent",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/accent.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/accent.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "accordion",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/collapse"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/accordion.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/accordion.blade.php"
+                },
+                {
+                    "path": "ui/accordion-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/accordion-content.blade.php"
+                },
+                {
+                    "path": "ui/accordion-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/accordion-item.blade.php"
+                },
+                {
+                    "path": "ui/accordion-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/accordion-trigger.blade.php"
+                },
+                {
+                    "path": "ui/accordion.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/accordion.css"
+                }
+            ]
+        },
+        {
+            "name": "add-to-cart",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "button"
+            ],
+            "files": [
+                {
+                    "path": "ui/add-to-cart.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/add-to-cart.blade.php"
+                },
+                {
+                    "path": "ui/add-to-cart.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/add-to-cart.css"
+                }
+            ]
+        },
+        {
+            "name": "alert",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/alert.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/alert.blade.php"
+                },
+                {
+                    "path": "ui/alert-action.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/alert-action.blade.php"
+                },
+                {
+                    "path": "ui/alert-description.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/alert-description.blade.php"
+                },
+                {
+                    "path": "ui/alert-title.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/alert-title.blade.php"
+                },
+                {
+                    "path": "ui/alert.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/alert.css"
+                }
+            ]
+        },
+        {
+            "name": "alert-dialog",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/focus"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/alert-dialog.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/alert-dialog.blade.php"
+                },
+                {
+                    "path": "ui/alert-dialog-action.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/alert-dialog-action.blade.php"
+                },
+                {
+                    "path": "ui/alert-dialog-cancel.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/alert-dialog-cancel.blade.php"
+                },
+                {
+                    "path": "ui/alert-dialog-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/alert-dialog-content.blade.php"
+                },
+                {
+                    "path": "ui/alert-dialog-description.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/alert-dialog-description.blade.php"
+                },
+                {
+                    "path": "ui/alert-dialog-footer.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/alert-dialog-footer.blade.php"
+                },
+                {
+                    "path": "ui/alert-dialog-header.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/alert-dialog-header.blade.php"
+                },
+                {
+                    "path": "ui/alert-dialog-title.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/alert-dialog-title.blade.php"
+                },
+                {
+                    "path": "ui/alert-dialog-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/alert-dialog-trigger.blade.php"
+                },
+                {
+                    "path": "ui/alert-dialog.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/alert-dialog.css"
+                }
+            ]
+        },
+        {
+            "name": "animated-beam",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/animated-beam.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/animated-beam.blade.php"
+                },
+                {
+                    "path": "ui/animated-beam.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/animated-beam.css"
+                }
+            ]
+        },
+        {
+            "name": "aspect-ratio",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/aspect-ratio.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/aspect-ratio.blade.php"
+                },
+                {
+                    "path": "ui/aspect-ratio.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/aspect-ratio.css"
+                }
+            ]
+        },
+        {
+            "name": "audio-player",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/audio-player.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/audio-player.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "aurora",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/aurora.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/aurora.blade.php"
+                },
+                {
+                    "path": "ui/aurora.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/aurora.css"
+                }
+            ]
+        },
+        {
+            "name": "autocomplete",
+            "type": "registry:ui",
+            "dependencies": [],
+            "registryDependencies": [
+                "combobox"
+            ],
+            "files": [
+                {
+                    "path": "ui/autocomplete.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/autocomplete.blade.php"
+                },
+                {
+                    "path": "ui/autocomplete.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/autocomplete.css"
+                }
+            ]
+        },
+        {
+            "name": "autosize-textarea",
+            "type": "registry:ui",
+            "dependencies": [],
+            "registryDependencies": [
+                "textarea"
+            ],
+            "files": [
+                {
+                    "path": "ui/autosize-textarea.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/autosize-textarea.blade.php"
+                },
+                {
+                    "path": "ui/autosize-textarea.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/autosize-textarea.css"
+                }
+            ]
+        },
+        {
+            "name": "avatar",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/avatar.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/avatar.blade.php"
+                },
+                {
+                    "path": "ui/avatar-fallback.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/avatar-fallback.blade.php"
+                },
+                {
+                    "path": "ui/avatar-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/avatar-group.blade.php"
+                },
+                {
+                    "path": "ui/avatar-image.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/avatar-image.blade.php"
+                },
+                {
+                    "path": "ui/avatar.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/avatar.css"
+                }
+            ]
+        },
+        {
+            "name": "back-to-top",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/back-to-top.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/back-to-top.blade.php"
+                },
+                {
+                    "path": "ui/back-to-top.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/back-to-top.css"
+                }
+            ]
+        },
+        {
+            "name": "badge",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/badge.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/badge.blade.php"
+                },
+                {
+                    "path": "ui/badge.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/badge.css"
+                }
+            ]
+        },
+        {
+            "name": "banner",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/banner.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/banner.blade.php"
+                },
+                {
+                    "path": "ui/banner.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/banner.css"
+                }
+            ]
+        },
+        {
+            "name": "bento-grid",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/bento-grid.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/bento-grid.blade.php"
+                },
+                {
+                    "path": "ui/bento-grid.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/bento-grid.css"
+                }
+            ]
+        },
+        {
+            "name": "bento-item",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/bento-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/bento-item.blade.php"
+                },
+                {
+                    "path": "ui/bento-grid.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/bento-grid.css"
+                }
+            ]
+        },
+        {
+            "name": "border-beam",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/border-beam.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/border-beam.blade.php"
+                },
+                {
+                    "path": "ui/border-beam.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/border-beam.css"
+                }
+            ]
+        },
+        {
+            "name": "bottom-navigation",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "bottom-navigation-item"
+            ],
+            "files": [
+                {
+                    "path": "ui/bottom-navigation.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/bottom-navigation.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "bottom-navigation-item",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/bottom-navigation-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/bottom-navigation-item.blade.php"
+                },
+                {
+                    "path": "ui/bottom-navigation.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/bottom-navigation.css"
+                }
+            ]
+        },
+        {
+            "name": "brand",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/brand.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/brand.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/breadcrumb.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/breadcrumb.blade.php"
+                },
+                {
+                    "path": "ui/breadcrumb-ellipsis.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/breadcrumb-ellipsis.blade.php"
+                },
+                {
+                    "path": "ui/breadcrumb-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/breadcrumb-item.blade.php"
+                },
+                {
+                    "path": "ui/breadcrumb-link.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/breadcrumb-link.blade.php"
+                },
+                {
+                    "path": "ui/breadcrumb-list.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/breadcrumb-list.blade.php"
+                },
+                {
+                    "path": "ui/breadcrumb-page.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/breadcrumb-page.blade.php"
+                },
+                {
+                    "path": "ui/breadcrumb-separator.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/breadcrumb-separator.blade.php"
+                },
+                {
+                    "path": "ui/breadcrumbs.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/breadcrumbs.css"
+                }
+            ]
+        },
+        {
+            "name": "button",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/button.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/button.blade.php"
+                },
+                {
+                    "path": "ui/btn.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/btn.css"
+                }
+            ]
+        },
+        {
+            "name": "button-group",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/button-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/button-group.blade.php"
+                },
+                {
+                    "path": "ui/button-group-separator.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/button-group-separator.blade.php"
+                },
+                {
+                    "path": "ui/button-group-text.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/button-group-text.blade.php"
+                },
+                {
+                    "path": "ui/button-group.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/button-group.css"
+                }
+            ]
+        },
+        {
+            "name": "calendar",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/calendar.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/calendar.blade.php"
+                },
+                {
+                    "path": "ui/calendar.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/calendar.css"
+                }
+            ]
+        },
+        {
+            "name": "card",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/card.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/card.blade.php"
+                },
+                {
+                    "path": "ui/card-action.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/card-action.blade.php"
+                },
+                {
+                    "path": "ui/card-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/card-content.blade.php"
+                },
+                {
+                    "path": "ui/card-description.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/card-description.blade.php"
+                },
+                {
+                    "path": "ui/card-footer.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/card-footer.blade.php"
+                },
+                {
+                    "path": "ui/card-header.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/card-header.blade.php"
+                },
+                {
+                    "path": "ui/card-title.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/card-title.blade.php"
+                },
+                {
+                    "path": "ui/card.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/card.css"
+                }
+            ]
+        },
+        {
+            "name": "carousel",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/carousel.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/carousel.blade.php"
+                },
+                {
+                    "path": "ui/carousel-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/carousel-content.blade.php"
+                },
+                {
+                    "path": "ui/carousel-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/carousel-item.blade.php"
+                },
+                {
+                    "path": "ui/carousel-next.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/carousel-next.blade.php"
+                },
+                {
+                    "path": "ui/carousel-previous.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/carousel-previous.blade.php"
+                },
+                {
+                    "path": "ui/carousel.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/carousel.css"
+                }
+            ]
+        },
+        {
+            "name": "chart",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel",
+                "apexcharts"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/chart.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/chart.blade.php"
+                },
+                {
+                    "path": "ui/chart-container.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/chart-container.blade.php"
+                },
+                {
+                    "path": "ui/chart-tooltip-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/chart-tooltip-content.blade.php"
+                },
+                {
+                    "path": "ui/chart.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/chart.css"
+                }
+            ]
+        },
+        {
+            "name": "chat",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "chat-message"
+            ],
+            "files": [
+                {
+                    "path": "ui/chat.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/chat.blade.php"
+                },
+                {
+                    "path": "ui/chat.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/chat.css"
+                }
+            ]
+        },
+        {
+            "name": "chat-message",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons"
+            ],
+            "registryDependencies": [
+                "avatar"
+            ],
+            "files": [
+                {
+                    "path": "ui/chat-message.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/chat-message.blade.php"
+                },
+                {
+                    "path": "ui/chat.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/chat.css"
+                }
+            ]
+        },
+        {
+            "name": "checkbox",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/checkbox.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/checkbox.blade.php"
+                },
+                {
+                    "path": "ui/checkbox.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/checkbox.css"
+                }
+            ]
+        },
+        {
+            "name": "citation",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "link"
+            ],
+            "files": [
+                {
+                    "path": "ui/citation.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/citation.blade.php"
+                },
+                {
+                    "path": "ui/citation.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/citation.css"
+                }
+            ]
+        },
+        {
+            "name": "code-block",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/code-block.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/code-block.blade.php"
+                },
+                {
+                    "path": "ui/code-block.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/code-block.css"
+                }
+            ]
+        },
+        {
+            "name": "collapsible",
+            "type": "registry:ui",
+            "dependencies": [
+                "@alpinejs/collapse"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/collapsible.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/collapsible.blade.php"
+                },
+                {
+                    "path": "ui/collapsible-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/collapsible-content.blade.php"
+                },
+                {
+                    "path": "ui/collapsible-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/collapsible-trigger.blade.php"
+                },
+                {
+                    "path": "ui/collapsible.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/collapsible.css"
+                }
+            ]
+        },
+        {
+            "name": "color-picker",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/color-picker.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/color-picker.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "combobox",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/anchor"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/combobox.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/combobox.blade.php"
+                },
+                {
+                    "path": "ui/combobox.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/combobox.css"
+                }
+            ]
+        },
+        {
+            "name": "command",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/command.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/command.blade.php"
+                },
+                {
+                    "path": "ui/command-empty.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/command-empty.blade.php"
+                },
+                {
+                    "path": "ui/command-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/command-group.blade.php"
+                },
+                {
+                    "path": "ui/command-input.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/command-input.blade.php"
+                },
+                {
+                    "path": "ui/command-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/command-item.blade.php"
+                },
+                {
+                    "path": "ui/command-list.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/command-list.blade.php"
+                },
+                {
+                    "path": "ui/command-separator.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/command-separator.blade.php"
+                },
+                {
+                    "path": "ui/command-shortcut.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/command-shortcut.blade.php"
+                },
+                {
+                    "path": "ui/command.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/command.css"
+                }
+            ]
+        },
+        {
+            "name": "command-dialog",
+            "type": "registry:ui",
+            "dependencies": [
+                "@alpinejs/focus"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/command-dialog.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/command-dialog.blade.php"
+                },
+                {
+                    "path": "ui/command.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/command.css"
+                }
+            ]
+        },
+        {
+            "name": "comparison-slider",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/comparison-slider.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/comparison-slider.blade.php"
+                },
+                {
+                    "path": "ui/comparison-slider.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/comparison-slider.css"
+                }
+            ]
+        },
+        {
+            "name": "comparison-table",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/comparison-table.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/comparison-table.blade.php"
+                },
+                {
+                    "path": "ui/comparison-table.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/comparison-table.css"
+                }
+            ]
+        },
+        {
+            "name": "confetti",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "button"
+            ],
+            "files": [
+                {
+                    "path": "ui/confetti.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/confetti.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "container",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/container.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/container.blade.php"
+                },
+                {
+                    "path": "ui/container.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/container.css"
+                }
+            ]
+        },
+        {
+            "name": "context-menu",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/anchor"
+            ],
+            "registryDependencies": [
+                "menu-checkbox-item",
+                "menu-group",
+                "menu-item",
+                "menu-label",
+                "menu-radio-item",
+                "menu-separator",
+                "menu-shortcut"
+            ],
+            "files": [
+                {
+                    "path": "ui/context-menu.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/context-menu.blade.php"
+                },
+                {
+                    "path": "ui/context-menu-checkbox-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/context-menu-checkbox-item.blade.php"
+                },
+                {
+                    "path": "ui/context-menu-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/context-menu-content.blade.php"
+                },
+                {
+                    "path": "ui/context-menu-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/context-menu-group.blade.php"
+                },
+                {
+                    "path": "ui/context-menu-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/context-menu-item.blade.php"
+                },
+                {
+                    "path": "ui/context-menu-label.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/context-menu-label.blade.php"
+                },
+                {
+                    "path": "ui/context-menu-radio-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/context-menu-radio-group.blade.php"
+                },
+                {
+                    "path": "ui/context-menu-radio-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/context-menu-radio-item.blade.php"
+                },
+                {
+                    "path": "ui/context-menu-separator.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/context-menu-separator.blade.php"
+                },
+                {
+                    "path": "ui/context-menu-shortcut.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/context-menu-shortcut.blade.php"
+                },
+                {
+                    "path": "ui/context-menu-sub.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/context-menu-sub.blade.php"
+                },
+                {
+                    "path": "ui/context-menu-sub-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/context-menu-sub-content.blade.php"
+                },
+                {
+                    "path": "ui/context-menu-sub-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/context-menu-sub-trigger.blade.php"
+                },
+                {
+                    "path": "ui/context-menu-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/context-menu-trigger.blade.php"
+                },
+                {
+                    "path": "ui/context-menu.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/context-menu.css"
+                }
+            ]
+        },
+        {
+            "name": "cookie-consent",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/cookie-consent.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/cookie-consent.blade.php"
+                },
+                {
+                    "path": "ui/cookie-consent.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/cookie-consent.css"
+                }
+            ]
+        },
+        {
+            "name": "copy-button",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/copy-button.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/copy-button.blade.php"
+                },
+                {
+                    "path": "ui/copy-button.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/copy-button.css"
+                }
+            ]
+        },
+        {
+            "name": "countdown",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/countdown.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/countdown.blade.php"
+                },
+                {
+                    "path": "ui/countdown.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/countdown.css"
+                }
+            ]
+        },
+        {
+            "name": "data-table",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "button",
+                "input"
+            ],
+            "files": [
+                {
+                    "path": "ui/data-table.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/data-table.blade.php"
+                },
+                {
+                    "path": "ui/data-table.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/data-table.css"
+                }
+            ]
+        },
+        {
+            "name": "date-picker",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/anchor",
+                "@alpinejs/focus"
+            ],
+            "registryDependencies": [
+                "calendar"
+            ],
+            "files": [
+                {
+                    "path": "ui/date-picker.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/date-picker.blade.php"
+                },
+                {
+                    "path": "ui/date-picker.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/date-picker.css"
+                }
+            ]
+        },
+        {
+            "name": "datetime-picker",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/anchor",
+                "@alpinejs/focus"
+            ],
+            "registryDependencies": [
+                "button",
+                "calendar",
+                "time-field"
+            ],
+            "files": [
+                {
+                    "path": "ui/datetime-picker.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/datetime-picker.blade.php"
+                },
+                {
+                    "path": "ui/datetime-picker.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/datetime-picker.css"
+                }
+            ]
+        },
+        {
+            "name": "description-item",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "description-list"
+            ],
+            "files": [
+                {
+                    "path": "ui/description-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/description-item.blade.php"
+                },
+                {
+                    "path": "ui/description-list.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/description-list.css"
+                }
+            ]
+        },
+        {
+            "name": "description-list",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/description-list.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/description-list.blade.php"
+                },
+                {
+                    "path": "ui/description-list.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/description-list.css"
+                }
+            ]
+        },
+        {
+            "name": "dialog",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/focus"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/dialog.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dialog.blade.php"
+                },
+                {
+                    "path": "ui/dialog-close.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dialog-close.blade.php"
+                },
+                {
+                    "path": "ui/dialog-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dialog-content.blade.php"
+                },
+                {
+                    "path": "ui/dialog-description.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dialog-description.blade.php"
+                },
+                {
+                    "path": "ui/dialog-footer.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dialog-footer.blade.php"
+                },
+                {
+                    "path": "ui/dialog-header.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dialog-header.blade.php"
+                },
+                {
+                    "path": "ui/dialog-title.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dialog-title.blade.php"
+                },
+                {
+                    "path": "ui/dialog-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dialog-trigger.blade.php"
+                },
+                {
+                    "path": "ui/modal.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/modal.css"
+                }
+            ]
+        },
+        {
+            "name": "diff-viewer",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/diff-viewer.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/diff-viewer.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "dock",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "dock-item"
+            ],
+            "files": [
+                {
+                    "path": "ui/dock.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dock.blade.php"
+                },
+                {
+                    "path": "ui/dock.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/dock.css"
+                }
+            ]
+        },
+        {
+            "name": "dock-item",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "dock"
+            ],
+            "files": [
+                {
+                    "path": "ui/dock-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dock-item.blade.php"
+                },
+                {
+                    "path": "ui/dock.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/dock.css"
+                }
+            ]
+        },
+        {
+            "name": "dot-pattern",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/dot-pattern.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dot-pattern.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "drawer",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/focus"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/drawer.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/drawer.blade.php"
+                },
+                {
+                    "path": "ui/drawer-close.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/drawer-close.blade.php"
+                },
+                {
+                    "path": "ui/drawer-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/drawer-content.blade.php"
+                },
+                {
+                    "path": "ui/drawer-description.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/drawer-description.blade.php"
+                },
+                {
+                    "path": "ui/drawer-footer.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/drawer-footer.blade.php"
+                },
+                {
+                    "path": "ui/drawer-header.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/drawer-header.blade.php"
+                },
+                {
+                    "path": "ui/drawer-title.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/drawer-title.blade.php"
+                },
+                {
+                    "path": "ui/drawer-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/drawer-trigger.blade.php"
+                },
+                {
+                    "path": "ui/drawer.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/drawer.css"
+                }
+            ]
+        },
+        {
+            "name": "dropdown-menu",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/anchor"
+            ],
+            "registryDependencies": [
+                "menu-checkbox-item",
+                "menu-group",
+                "menu-item",
+                "menu-label",
+                "menu-radio-item",
+                "menu-separator",
+                "menu-shortcut"
+            ],
+            "files": [
+                {
+                    "path": "ui/dropdown-menu.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dropdown-menu.blade.php"
+                },
+                {
+                    "path": "ui/dropdown-menu-checkbox-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dropdown-menu-checkbox-item.blade.php"
+                },
+                {
+                    "path": "ui/dropdown-menu-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dropdown-menu-content.blade.php"
+                },
+                {
+                    "path": "ui/dropdown-menu-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dropdown-menu-group.blade.php"
+                },
+                {
+                    "path": "ui/dropdown-menu-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dropdown-menu-item.blade.php"
+                },
+                {
+                    "path": "ui/dropdown-menu-label.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dropdown-menu-label.blade.php"
+                },
+                {
+                    "path": "ui/dropdown-menu-radio-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dropdown-menu-radio-group.blade.php"
+                },
+                {
+                    "path": "ui/dropdown-menu-radio-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dropdown-menu-radio-item.blade.php"
+                },
+                {
+                    "path": "ui/dropdown-menu-separator.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dropdown-menu-separator.blade.php"
+                },
+                {
+                    "path": "ui/dropdown-menu-shortcut.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dropdown-menu-shortcut.blade.php"
+                },
+                {
+                    "path": "ui/dropdown-menu-sub.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dropdown-menu-sub.blade.php"
+                },
+                {
+                    "path": "ui/dropdown-menu-sub-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dropdown-menu-sub-content.blade.php"
+                },
+                {
+                    "path": "ui/dropdown-menu-sub-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dropdown-menu-sub-trigger.blade.php"
+                },
+                {
+                    "path": "ui/dropdown-menu-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/dropdown-menu-trigger.blade.php"
+                },
+                {
+                    "path": "ui/dropdown-menu.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/dropdown-menu.css"
+                }
+            ]
+        },
+        {
+            "name": "editable",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/editable.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/editable.blade.php"
+                },
+                {
+                    "path": "ui/editable.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/editable.css"
+                }
+            ]
+        },
+        {
+            "name": "empty",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/empty.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/empty.blade.php"
+                },
+                {
+                    "path": "ui/empty-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/empty-content.blade.php"
+                },
+                {
+                    "path": "ui/empty-description.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/empty-description.blade.php"
+                },
+                {
+                    "path": "ui/empty-header.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/empty-header.blade.php"
+                },
+                {
+                    "path": "ui/empty-media.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/empty-media.blade.php"
+                },
+                {
+                    "path": "ui/empty-title.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/empty-title.blade.php"
+                },
+                {
+                    "path": "ui/empty.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/empty.css"
+                }
+            ]
+        },
+        {
+            "name": "field",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/field.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/field.blade.php"
+                },
+                {
+                    "path": "ui/field-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/field-content.blade.php"
+                },
+                {
+                    "path": "ui/field-description.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/field-description.blade.php"
+                },
+                {
+                    "path": "ui/field-error.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/field-error.blade.php"
+                },
+                {
+                    "path": "ui/field-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/field-group.blade.php"
+                },
+                {
+                    "path": "ui/field-label.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/field-label.blade.php"
+                },
+                {
+                    "path": "ui/field-legend.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/field-legend.blade.php"
+                },
+                {
+                    "path": "ui/field-separator.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/field-separator.blade.php"
+                },
+                {
+                    "path": "ui/field-set.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/field-set.blade.php"
+                },
+                {
+                    "path": "ui/field-title.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/field-title.blade.php"
+                },
+                {
+                    "path": "ui/field.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/field.css"
+                }
+            ]
+        },
+        {
+            "name": "file-upload",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/file-upload.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/file-upload.blade.php"
+                },
+                {
+                    "path": "ui/file-upload.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/file-upload.css"
+                }
+            ]
+        },
+        {
+            "name": "flip-card",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/flip-card.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/flip-card.blade.php"
+                },
+                {
+                    "path": "ui/flip-card.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/flip-card.css"
+                }
+            ]
+        },
+        {
+            "name": "gallery",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/focus"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/gallery.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/gallery.blade.php"
+                },
+                {
+                    "path": "ui/gallery.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/gallery.css"
+                }
+            ]
+        },
+        {
+            "name": "gantt",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/gantt.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/gantt.blade.php"
+                },
+                {
+                    "path": "ui/gantt.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/gantt.css"
+                }
+            ]
+        },
+        {
+            "name": "gradient-text",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/gradient-text.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/gradient-text.blade.php"
+                },
+                {
+                    "path": "ui/gradient-text.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/gradient-text.css"
+                }
+            ]
+        },
+        {
+            "name": "grid-pattern",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/grid-pattern.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/grid-pattern.blade.php"
+                },
+                {
+                    "path": "ui/grid-pattern.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/grid-pattern.css"
+                }
+            ]
+        },
+        {
+            "name": "heatmap",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/heatmap.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/heatmap.blade.php"
+                },
+                {
+                    "path": "ui/heatmap.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/heatmap.css"
+                }
+            ]
+        },
+        {
+            "name": "hover-card",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/anchor"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/hover-card.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/hover-card.blade.php"
+                },
+                {
+                    "path": "ui/hover-card-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/hover-card-content.blade.php"
+                },
+                {
+                    "path": "ui/hover-card-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/hover-card-trigger.blade.php"
+                },
+                {
+                    "path": "ui/hover-card.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/hover-card.css"
+                }
+            ]
+        },
+        {
+            "name": "icon",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/icon.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/icon.blade.php"
+                },
+                {
+                    "path": "ui/icon.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/icon.css"
+                }
+            ]
+        },
+        {
+            "name": "image",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/image.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/image.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "infinite-scroll",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "button",
+                "spinner"
+            ],
+            "files": [
+                {
+                    "path": "ui/infinite-scroll.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/infinite-scroll.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "input",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/input.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/input.blade.php"
+                },
+                {
+                    "path": "ui/input-mask.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/input-mask.blade.php"
+                },
+                {
+                    "path": "ui/input.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/input.css"
+                }
+            ]
+        },
+        {
+            "name": "input-group",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/input-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/input-group.blade.php"
+                },
+                {
+                    "path": "ui/input-group-addon.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/input-group-addon.blade.php"
+                },
+                {
+                    "path": "ui/input-group-button.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/input-group-button.blade.php"
+                },
+                {
+                    "path": "ui/input-group-input.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/input-group-input.blade.php"
+                },
+                {
+                    "path": "ui/input-group-text.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/input-group-text.blade.php"
+                },
+                {
+                    "path": "ui/input-group.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/input-group.css"
+                }
+            ]
+        },
+        {
+            "name": "input-otp",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/input-otp.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/input-otp.blade.php"
+                },
+                {
+                    "path": "ui/input-otp-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/input-otp-group.blade.php"
+                },
+                {
+                    "path": "ui/input-otp-separator.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/input-otp-separator.blade.php"
+                },
+                {
+                    "path": "ui/input-otp-slot.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/input-otp-slot.blade.php"
+                },
+                {
+                    "path": "ui/input-otp.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/input-otp.css"
+                }
+            ]
+        },
+        {
+            "name": "item",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/item.blade.php"
+                },
+                {
+                    "path": "ui/item-actions.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/item-actions.blade.php"
+                },
+                {
+                    "path": "ui/item-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/item-content.blade.php"
+                },
+                {
+                    "path": "ui/item-description.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/item-description.blade.php"
+                },
+                {
+                    "path": "ui/item-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/item-group.blade.php"
+                },
+                {
+                    "path": "ui/item-media.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/item-media.blade.php"
+                },
+                {
+                    "path": "ui/item-separator.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/item-separator.blade.php"
+                },
+                {
+                    "path": "ui/item-title.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/item-title.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "json-viewer",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/json-viewer.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/json-viewer.blade.php"
+                },
+                {
+                    "path": "ui/json-viewer.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/json-viewer.css"
+                }
+            ]
+        },
+        {
+            "name": "json-viewer-node",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/json-viewer-node.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/json-viewer-node.blade.php"
+                },
+                {
+                    "path": "ui/json-viewer.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/json-viewer.css"
+                }
+            ]
+        },
+        {
+            "name": "kanban",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/kanban.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/kanban.blade.php"
+                },
+                {
+                    "path": "ui/kanban.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/kanban.css"
+                }
+            ]
+        },
+        {
+            "name": "kbd",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/kbd.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/kbd.blade.php"
+                },
+                {
+                    "path": "ui/kbd-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/kbd-group.blade.php"
+                },
+                {
+                    "path": "ui/kbd.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/kbd.css"
+                }
+            ]
+        },
+        {
+            "name": "knob",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/knob.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/knob.blade.php"
+                },
+                {
+                    "path": "ui/knob.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/knob.css"
+                }
+            ]
+        },
+        {
+            "name": "label",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/label.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/label.blade.php"
+                },
+                {
+                    "path": "ui/label.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/label.css"
+                }
+            ]
+        },
+        {
+            "name": "link",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/link.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/link.blade.php"
+                },
+                {
+                    "path": "ui/link.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/link.css"
+                }
+            ]
+        },
+        {
+            "name": "loading-overlay",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/loading-overlay.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/loading-overlay.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "map",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/map.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/map.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "markdown-editor",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/markdown-editor.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/markdown-editor.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "marquee",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/marquee.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/marquee.blade.php"
+                },
+                {
+                    "path": "ui/marquee.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/marquee.css"
+                }
+            ]
+        },
+        {
+            "name": "masonry",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/masonry.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/masonry.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "mention-input",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "textarea"
+            ],
+            "files": [
+                {
+                    "path": "ui/mention-input.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/mention-input.blade.php"
+                },
+                {
+                    "path": "ui/mention-input.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/mention-input.css"
+                }
+            ]
+        },
+        {
+            "name": "menu-checkbox-item",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/menu-checkbox-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menu-checkbox-item.blade.php"
+                },
+                {
+                    "path": "ui/menu.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/menu.css"
+                }
+            ]
+        },
+        {
+            "name": "menu-group",
+            "type": "registry:ui",
+            "dependencies": [],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/menu-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menu-group.blade.php"
+                },
+                {
+                    "path": "ui/menu.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/menu.css"
+                }
+            ]
+        },
+        {
+            "name": "menu-item",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/menu-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menu-item.blade.php"
+                },
+                {
+                    "path": "ui/menu.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/menu.css"
+                }
+            ]
+        },
+        {
+            "name": "menu-label",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/menu-label.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menu-label.blade.php"
+                },
+                {
+                    "path": "ui/menu.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/menu.css"
+                }
+            ]
+        },
+        {
+            "name": "menu-radio-item",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/menu-radio-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menu-radio-item.blade.php"
+                },
+                {
+                    "path": "ui/menu.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/menu.css"
+                }
+            ]
+        },
+        {
+            "name": "menu-separator",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/menu-separator.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menu-separator.blade.php"
+                },
+                {
+                    "path": "ui/menu.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/menu.css"
+                }
+            ]
+        },
+        {
+            "name": "menu-shortcut",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/menu-shortcut.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menu-shortcut.blade.php"
+                },
+                {
+                    "path": "ui/menu.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/menu.css"
+                }
+            ]
+        },
+        {
+            "name": "menubar",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/anchor"
+            ],
+            "registryDependencies": [
+                "menu-checkbox-item",
+                "menu-group",
+                "menu-item",
+                "menu-label",
+                "menu-radio-item",
+                "menu-separator",
+                "menu-shortcut"
+            ],
+            "files": [
+                {
+                    "path": "ui/menubar.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menubar.blade.php"
+                },
+                {
+                    "path": "ui/menubar-checkbox-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menubar-checkbox-item.blade.php"
+                },
+                {
+                    "path": "ui/menubar-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menubar-content.blade.php"
+                },
+                {
+                    "path": "ui/menubar-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menubar-group.blade.php"
+                },
+                {
+                    "path": "ui/menubar-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menubar-item.blade.php"
+                },
+                {
+                    "path": "ui/menubar-label.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menubar-label.blade.php"
+                },
+                {
+                    "path": "ui/menubar-menu.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menubar-menu.blade.php"
+                },
+                {
+                    "path": "ui/menubar-radio-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menubar-radio-group.blade.php"
+                },
+                {
+                    "path": "ui/menubar-radio-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menubar-radio-item.blade.php"
+                },
+                {
+                    "path": "ui/menubar-separator.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menubar-separator.blade.php"
+                },
+                {
+                    "path": "ui/menubar-shortcut.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menubar-shortcut.blade.php"
+                },
+                {
+                    "path": "ui/menubar-sub.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menubar-sub.blade.php"
+                },
+                {
+                    "path": "ui/menubar-sub-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menubar-sub-content.blade.php"
+                },
+                {
+                    "path": "ui/menubar-sub-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menubar-sub-trigger.blade.php"
+                },
+                {
+                    "path": "ui/menubar-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/menubar-trigger.blade.php"
+                },
+                {
+                    "path": "ui/menubar.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/menubar.css"
+                }
+            ]
+        },
+        {
+            "name": "meteors",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/meteors.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/meteors.blade.php"
+                },
+                {
+                    "path": "ui/meteors.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/meteors.css"
+                }
+            ]
+        },
+        {
+            "name": "meter",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/meter.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/meter.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "mini-cart",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/anchor",
+                "@alpinejs/focus"
+            ],
+            "registryDependencies": [
+                "button"
+            ],
+            "files": [
+                {
+                    "path": "ui/mini-cart.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/mini-cart.blade.php"
+                },
+                {
+                    "path": "ui/mini-cart.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/mini-cart.css"
+                }
+            ]
+        },
+        {
+            "name": "navigation-menu",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/anchor"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/navigation-menu.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/navigation-menu.blade.php"
+                },
+                {
+                    "path": "ui/navigation-menu-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/navigation-menu-content.blade.php"
+                },
+                {
+                    "path": "ui/navigation-menu-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/navigation-menu-item.blade.php"
+                },
+                {
+                    "path": "ui/navigation-menu-link.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/navigation-menu-link.blade.php"
+                },
+                {
+                    "path": "ui/navigation-menu-list.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/navigation-menu-list.blade.php"
+                },
+                {
+                    "path": "ui/navigation-menu-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/navigation-menu-trigger.blade.php"
+                },
+                {
+                    "path": "ui/navigation-menu.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/navigation-menu.css"
+                }
+            ]
+        },
+        {
+            "name": "notification-center",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/anchor",
+                "@alpinejs/focus"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/notification-center.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/notification-center.blade.php"
+                },
+                {
+                    "path": "ui/notification-center.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/notification-center.css"
+                }
+            ]
+        },
+        {
+            "name": "number-input",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/number-input.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/number-input.blade.php"
+                },
+                {
+                    "path": "ui/number-input.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/number-input.css"
+                }
+            ]
+        },
+        {
+            "name": "number-ticker",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/number-ticker.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/number-ticker.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "onboarding-tour",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/focus"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/onboarding-tour.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/onboarding-tour.blade.php"
+                },
+                {
+                    "path": "ui/onboarding-tour.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/onboarding-tour.css"
+                }
+            ]
+        },
+        {
+            "name": "org-chart",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/org-chart.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/org-chart.blade.php"
+                },
+                {
+                    "path": "ui/org-chart.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/org-chart.css"
+                }
+            ]
+        },
+        {
+            "name": "org-chart-node",
+            "type": "registry:ui",
+            "dependencies": [],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/org-chart-node.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/org-chart-node.blade.php"
+                },
+                {
+                    "path": "ui/org-chart.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/org-chart.css"
+                }
+            ]
+        },
+        {
+            "name": "page-header",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/page-header.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/page-header.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "pagination",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/pagination.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/pagination.blade.php"
+                },
+                {
+                    "path": "ui/pagination-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/pagination-content.blade.php"
+                },
+                {
+                    "path": "ui/pagination-ellipsis.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/pagination-ellipsis.blade.php"
+                },
+                {
+                    "path": "ui/pagination-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/pagination-item.blade.php"
+                },
+                {
+                    "path": "ui/pagination-link.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/pagination-link.blade.php"
+                },
+                {
+                    "path": "ui/pagination-next.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/pagination-next.blade.php"
+                },
+                {
+                    "path": "ui/pagination-previous.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/pagination-previous.blade.php"
+                },
+                {
+                    "path": "ui/join-based.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/join-based.css"
+                }
+            ]
+        },
+        {
+            "name": "parallax",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/parallax.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/parallax.blade.php"
+                },
+                {
+                    "path": "ui/parallax.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/parallax.css"
+                }
+            ]
+        },
+        {
+            "name": "password-strength",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/password-strength.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/password-strength.blade.php"
+                },
+                {
+                    "path": "ui/password-strength.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/password-strength.css"
+                }
+            ]
+        },
+        {
+            "name": "phone-input",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/phone-input.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/phone-input.blade.php"
+                },
+                {
+                    "path": "ui/phone-input.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/phone-input.css"
+                }
+            ]
+        },
+        {
+            "name": "popover",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/anchor",
+                "@alpinejs/focus"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/popover.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/popover.blade.php"
+                },
+                {
+                    "path": "ui/popover-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/popover-content.blade.php"
+                },
+                {
+                    "path": "ui/popover-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/popover-trigger.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "presence",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/presence.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/presence.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "price",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "badge"
+            ],
+            "files": [
+                {
+                    "path": "ui/price.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/price.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "product-card",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "badge",
+                "button",
+                "price",
+                "rating"
+            ],
+            "files": [
+                {
+                    "path": "ui/product-card.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/product-card.blade.php"
+                },
+                {
+                    "path": "ui/product-card.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/product-card.css"
+                }
+            ]
+        },
+        {
+            "name": "profile",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "avatar"
+            ],
+            "files": [
+                {
+                    "path": "ui/profile.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/profile.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "progress",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/progress.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/progress.blade.php"
+                },
+                {
+                    "path": "ui/progress.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/progress.css"
+                }
+            ]
+        },
+        {
+            "name": "prompt-input",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/prompt-input.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/prompt-input.blade.php"
+                },
+                {
+                    "path": "ui/prompt-input.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/prompt-input.css"
+                }
+            ]
+        },
+        {
+            "name": "qr-code",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/qr-code.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/qr-code.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "quote",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/quote.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/quote.blade.php"
+                },
+                {
+                    "path": "ui/quote.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/quote.css"
+                }
+            ]
+        },
+        {
+            "name": "radio-group",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/radio-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/radio-group.blade.php"
+                },
+                {
+                    "path": "ui/radio-group-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/radio-group-item.blade.php"
+                },
+                {
+                    "path": "ui/radio-group.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/radio-group.css"
+                }
+            ]
+        },
+        {
+            "name": "rating",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/rating.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/rating.blade.php"
+                },
+                {
+                    "path": "ui/rating.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/rating.css"
+                }
+            ]
+        },
+        {
+            "name": "reasoning",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/collapse"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/reasoning.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/reasoning.blade.php"
+                },
+                {
+                    "path": "ui/reasoning.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/reasoning.css"
+                }
+            ]
+        },
+        {
+            "name": "repeater",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/repeater.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/repeater.blade.php"
+                },
+                {
+                    "path": "ui/repeater.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/repeater.css"
+                }
+            ]
+        },
+        {
+            "name": "resizable",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/resizable-handle.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/resizable-handle.blade.php"
+                },
+                {
+                    "path": "ui/resizable-panel.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/resizable-panel.blade.php"
+                },
+                {
+                    "path": "ui/resizable-panel-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/resizable-panel-group.blade.php"
+                },
+                {
+                    "path": "ui/resizable.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/resizable.css"
+                }
+            ]
+        },
+        {
+            "name": "rich-text-editor",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/rich-text-editor.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/rich-text-editor.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "scheduler",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/scheduler.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/scheduler.blade.php"
+                },
+                {
+                    "path": "ui/scheduler.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/scheduler.css"
+                }
+            ]
+        },
+        {
+            "name": "scroll-area",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/scroll-area.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/scroll-area.blade.php"
+                },
+                {
+                    "path": "ui/scroll-area.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/scroll-area.css"
+                }
+            ]
+        },
+        {
+            "name": "scrollspy",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/scrollspy.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/scrollspy.blade.php"
+                },
+                {
+                    "path": "ui/scrollspy.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/scrollspy.css"
+                }
+            ]
+        },
+        {
+            "name": "segmented-control",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/segmented-control.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/segmented-control.blade.php"
+                },
+                {
+                    "path": "ui/segmented-control.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/segmented-control.css"
+                }
+            ]
+        },
+        {
+            "name": "select",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/select.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/select.blade.php"
+                },
+                {
+                    "path": "ui/select-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/select-content.blade.php"
+                },
+                {
+                    "path": "ui/select-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/select-group.blade.php"
+                },
+                {
+                    "path": "ui/select-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/select-item.blade.php"
+                },
+                {
+                    "path": "ui/select-label.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/select-label.blade.php"
+                },
+                {
+                    "path": "ui/select-separator.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/select-separator.blade.php"
+                },
+                {
+                    "path": "ui/select-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/select-trigger.blade.php"
+                },
+                {
+                    "path": "ui/select-value.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/select-value.blade.php"
+                },
+                {
+                    "path": "ui/select.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/select.css"
+                }
+            ]
+        },
+        {
+            "name": "separator",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/separator.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/separator.blade.php"
+                },
+                {
+                    "path": "ui/divider.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/divider.css"
+                }
+            ]
+        },
+        {
+            "name": "server-table",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "button",
+                "dropdown-menu",
+                "input"
+            ],
+            "files": [
+                {
+                    "path": "ui/server-table.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/server-table.blade.php"
+                },
+                {
+                    "path": "ui/data-table.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/data-table.css"
+                }
+            ]
+        },
+        {
+            "name": "sheet",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/focus"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/sheet.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sheet.blade.php"
+                },
+                {
+                    "path": "ui/sheet-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sheet-content.blade.php"
+                },
+                {
+                    "path": "ui/sheet-description.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sheet-description.blade.php"
+                },
+                {
+                    "path": "ui/sheet-footer.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sheet-footer.blade.php"
+                },
+                {
+                    "path": "ui/sheet-header.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sheet-header.blade.php"
+                },
+                {
+                    "path": "ui/sheet-title.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sheet-title.blade.php"
+                },
+                {
+                    "path": "ui/sheet-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sheet-trigger.blade.php"
+                },
+                {
+                    "path": "ui/sheet.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/sheet.css"
+                }
+            ]
+        },
+        {
+            "name": "sidebar",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/focus"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/sidebar.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-content.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-footer.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-footer.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-group.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-group-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-group-content.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-group-label.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-group-label.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-header.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-header.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-input.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-input.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-inset.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-inset.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-menu.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-menu.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-menu-action.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-menu-action.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-menu-badge.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-menu-badge.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-menu-button.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-menu-button.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-menu-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-menu-item.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-menu-sub.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-menu-sub.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-menu-sub-button.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-menu-sub-button.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-menu-sub-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-menu-sub-item.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-provider.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-provider.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-rail.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-rail.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-separator.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-separator.blade.php"
+                },
+                {
+                    "path": "ui/sidebar-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sidebar-trigger.blade.php"
+                },
+                {
+                    "path": "ui/sidebar.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/sidebar.css"
+                }
+            ]
+        },
+        {
+            "name": "signature-pad",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "button"
+            ],
+            "files": [
+                {
+                    "path": "ui/signature-pad.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/signature-pad.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "skeleton",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/skeleton.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/skeleton.blade.php"
+                },
+                {
+                    "path": "ui/skeleton.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/skeleton.css"
+                }
+            ]
+        },
+        {
+            "name": "slider",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/slider.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/slider.blade.php"
+                },
+                {
+                    "path": "ui/slider.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/slider.css"
+                }
+            ]
+        },
+        {
+            "name": "sonner",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/sonner.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sonner.blade.php"
+                },
+                {
+                    "path": "ui/sonner-flash.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sonner-flash.blade.php"
+                },
+                {
+                    "path": "ui/sonner.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/sonner.css"
+                }
+            ]
+        },
+        {
+            "name": "sparkline",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/sparkline.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/sparkline.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "speed-dial",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/speed-dial.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/speed-dial.blade.php"
+                },
+                {
+                    "path": "ui/speed-dial.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/speed-dial.css"
+                }
+            ]
+        },
+        {
+            "name": "spinner",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/spinner.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/spinner.blade.php"
+                },
+                {
+                    "path": "ui/spinner.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/spinner.css"
+                }
+            ]
+        },
+        {
+            "name": "spotlight-card",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/spotlight-card.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/spotlight-card.blade.php"
+                },
+                {
+                    "path": "ui/spotlight-card.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/spotlight-card.css"
+                }
+            ]
+        },
+        {
+            "name": "stack",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/stack.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/stack.blade.php"
+                },
+                {
+                    "path": "ui/stack.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/stack.css"
+                }
+            ]
+        },
+        {
+            "name": "stat",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "sparkline"
+            ],
+            "files": [
+                {
+                    "path": "ui/stat.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/stat.blade.php"
+                },
+                {
+                    "path": "ui/stat.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/stat.css"
+                }
+            ]
+        },
+        {
+            "name": "stepper",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/stepper.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/stepper.blade.php"
+                },
+                {
+                    "path": "ui/stepper.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/stepper.css"
+                }
+            ]
+        },
+        {
+            "name": "stepper-content",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/stepper-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/stepper-content.blade.php"
+                },
+                {
+                    "path": "ui/stepper.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/stepper.css"
+                }
+            ]
+        },
+        {
+            "name": "stepper-description",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/stepper-description.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/stepper-description.blade.php"
+                },
+                {
+                    "path": "ui/stepper.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/stepper.css"
+                }
+            ]
+        },
+        {
+            "name": "stepper-indicator",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/stepper-indicator.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/stepper-indicator.blade.php"
+                },
+                {
+                    "path": "ui/stepper.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/stepper.css"
+                }
+            ]
+        },
+        {
+            "name": "stepper-item",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/stepper-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/stepper-item.blade.php"
+                },
+                {
+                    "path": "ui/stepper.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/stepper.css"
+                }
+            ]
+        },
+        {
+            "name": "stepper-nav",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/stepper-nav.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/stepper-nav.blade.php"
+                },
+                {
+                    "path": "ui/stepper.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/stepper.css"
+                }
+            ]
+        },
+        {
+            "name": "stepper-separator",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/stepper-separator.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/stepper-separator.blade.php"
+                },
+                {
+                    "path": "ui/stepper.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/stepper.css"
+                }
+            ]
+        },
+        {
+            "name": "stepper-title",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/stepper-title.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/stepper-title.blade.php"
+                },
+                {
+                    "path": "ui/stepper.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/stepper.css"
+                }
+            ]
+        },
+        {
+            "name": "stepper-trigger",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/stepper-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/stepper-trigger.blade.php"
+                },
+                {
+                    "path": "ui/stepper.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/stepper.css"
+                }
+            ]
+        },
+        {
+            "name": "streaming-text",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/streaming-text.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/streaming-text.blade.php"
+                },
+                {
+                    "path": "ui/streaming-text.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/streaming-text.css"
+                }
+            ]
+        },
+        {
+            "name": "switch",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/switch.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/switch.blade.php"
+                },
+                {
+                    "path": "ui/switch.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/switch.css"
+                }
+            ]
+        },
+        {
+            "name": "table",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/table.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/table.blade.php"
+                },
+                {
+                    "path": "ui/table-body.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/table-body.blade.php"
+                },
+                {
+                    "path": "ui/table-caption.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/table-caption.blade.php"
+                },
+                {
+                    "path": "ui/table-cell.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/table-cell.blade.php"
+                },
+                {
+                    "path": "ui/table-footer.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/table-footer.blade.php"
+                },
+                {
+                    "path": "ui/table-head.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/table-head.blade.php"
+                },
+                {
+                    "path": "ui/table-header.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/table-header.blade.php"
+                },
+                {
+                    "path": "ui/table-row.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/table-row.blade.php"
+                },
+                {
+                    "path": "ui/table.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/table.css"
+                }
+            ]
+        },
+        {
+            "name": "tabs",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/tabs.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/tabs.blade.php"
+                },
+                {
+                    "path": "ui/tabs-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/tabs-content.blade.php"
+                },
+                {
+                    "path": "ui/tabs-list.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/tabs-list.blade.php"
+                },
+                {
+                    "path": "ui/tabs-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/tabs-trigger.blade.php"
+                },
+                {
+                    "path": "ui/tabs.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/tabs.css"
+                }
+            ]
+        },
+        {
+            "name": "tags-input",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/tags-input.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/tags-input.blade.php"
+                },
+                {
+                    "path": "ui/tags-input.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/tags-input.css"
+                }
+            ]
+        },
+        {
+            "name": "terminal",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/terminal.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/terminal.blade.php"
+                },
+                {
+                    "path": "ui/terminal.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/terminal.css"
+                }
+            ]
+        },
+        {
+            "name": "text-reveal",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/text-reveal.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/text-reveal.blade.php"
+                },
+                {
+                    "path": "ui/text-reveal.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/text-reveal.css"
+                }
+            ]
+        },
+        {
+            "name": "textarea",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/textarea.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/textarea.blade.php"
+                },
+                {
+                    "path": "ui/textarea.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/textarea.css"
+                }
+            ]
+        },
+        {
+            "name": "tilt-card",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/tilt-card.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/tilt-card.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "time-field",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "input"
+            ],
+            "files": [
+                {
+                    "path": "ui/time-field.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/time-field.blade.php"
+                },
+                {
+                    "path": "ui/time-field.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/time-field.css"
+                }
+            ]
+        },
+        {
+            "name": "timeline",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/timeline.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/timeline.blade.php"
+                },
+                {
+                    "path": "ui/timeline-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/timeline-item.blade.php"
+                },
+                {
+                    "path": "ui/timeline.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/timeline.css"
+                }
+            ]
+        },
+        {
+            "name": "toggle",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/toggle.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/toggle.blade.php"
+                },
+                {
+                    "path": "ui/toggle.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/toggle.css"
+                }
+            ]
+        },
+        {
+            "name": "toggle-group",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/toggle-group.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/toggle-group.blade.php"
+                },
+                {
+                    "path": "ui/toggle-group-item.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/toggle-group-item.blade.php"
+                },
+                {
+                    "path": "ui/toggle-group.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/toggle-group.css"
+                }
+            ]
+        },
+        {
+            "name": "tool-call",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/collapse"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/tool-call.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/tool-call.blade.php"
+                },
+                {
+                    "path": "ui/tool-call.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/tool-call.css"
+                }
+            ]
+        },
+        {
+            "name": "tooltip",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/anchor"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/tooltip.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/tooltip.blade.php"
+                },
+                {
+                    "path": "ui/tooltip-content.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/tooltip-content.blade.php"
+                },
+                {
+                    "path": "ui/tooltip-trigger.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/tooltip-trigger.blade.php"
+                },
+                {
+                    "path": "ui/tooltip.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/tooltip.css"
+                }
+            ]
+        },
+        {
+            "name": "top-progress",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/top-progress.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/top-progress.blade.php"
+                },
+                {
+                    "path": "ui/top-progress.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/top-progress.css"
+                }
+            ]
+        },
+        {
+            "name": "tree",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "tree-node"
+            ],
+            "files": [
+                {
+                    "path": "ui/tree.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/tree.blade.php"
+                },
+                {
+                    "path": "ui/tree.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/tree.css"
+                }
+            ]
+        },
+        {
+            "name": "tree-node",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/tree-node.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/tree-node.blade.php"
+                },
+                {
+                    "path": "ui/tree.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/tree.css"
+                }
+            ]
+        },
+        {
+            "name": "tree-table",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [
+                "button",
+                "tree-table-row"
+            ],
+            "files": [
+                {
+                    "path": "ui/tree-table.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/tree-table.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "tree-table-row",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/tree-table-row.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/tree-table-row.blade.php"
+                }
+            ]
+        },
+        {
+            "name": "typewriter",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/typewriter.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/typewriter.blade.php"
+                },
+                {
+                    "path": "ui/typewriter.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/typewriter.css"
+                }
+            ]
+        },
+        {
+            "name": "typography",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/typography.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/typography.blade.php"
+                },
+                {
+                    "path": "ui/typography.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/typography.css"
+                }
+            ]
+        },
+        {
+            "name": "variant-selector",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/variant-selector.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/variant-selector.blade.php"
+                },
+                {
+                    "path": "ui/variant-selector.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/variant-selector.css"
+                }
+            ]
+        },
+        {
+            "name": "video",
+            "type": "registry:ui",
+            "dependencies": [
+                "mallardduck/blade-lucide-icons",
+                "gehrisandro/tailwind-merge-laravel"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/video.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/video.blade.php"
+                },
+                {
+                    "path": "ui/video.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/video.css"
+                }
+            ]
+        },
+        {
+            "name": "visually-hidden",
+            "type": "registry:ui",
+            "dependencies": [
+                "gehrisandro/tailwind-merge-laravel",
+                "@alpinejs/focus"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "ui/visually-hidden.blade.php",
+                    "type": "registry:page",
+                    "target": "resources/views/components/ui/visually-hidden.blade.php"
+                }
+            ]
+        }
+    ]
+}

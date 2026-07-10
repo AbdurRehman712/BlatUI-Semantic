@@ -1,0 +1,24 @@
+/* ============================================================
+ * BlatUI Semantic — * VIDEO (video) — responsive video container
+ * Auto-generated from semantic-base.css (line 5456)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .video {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .video iframe,
+    .video video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+}

@@ -1,0 +1,25 @@
+/* ============================================================
+ * BlatUI Semantic — * CITATION & QUOTE (citation, quote)
+ * Auto-generated from semantic-base.css (line 4509)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .quote {
+      padding: 1rem 1.25rem;
+      border-left: 3px solid var(--color-primary);
+      background-color: var(--color-muted);
+      border-radius: var(--radius-md);
+      font-style: italic;
+      color: var(--color-muted-foreground);
+      margin: 0;
+    }
+    .quote::before { content: "\201C"; font-size: 1.5rem; line-height: 0; vertical-align: -0.4em; color: var(--color-primary); }
+    .citation {
+      font-size: 0.875rem;
+      color: var(--color-muted-foreground);
+      border-left: 2px solid var(--color-border);
+      padding-left: 0.75rem;
+    }
+}

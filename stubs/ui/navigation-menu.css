@@ -1,0 +1,52 @@
+/* ============================================================
+ * BlatUI Semantic — * NAVIGATION MENU (navigation-menu)
+ * Auto-generated from semantic-base.css (line 3856)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .navigation-menu { position: relative; display: inline-flex; }
+    .navigation-menu-list { display: flex; gap: 0.125rem; list-style: none; padding: 0; margin: 0; }
+    .navigation-menu-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: background-color 150ms ease;
+      color: var(--color-foreground);
+      border: none;
+      background: none;
+    }
+    .navigation-menu-trigger:hover { background-color: var(--color-muted); }
+    .navigation-menu-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 50;
+      min-width: 14rem;
+      background-color: var(--color-popover);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      padding: 0.375rem;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+    }
+    .navigation-menu-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: background-color 150ms ease;
+      text-decoration: none;
+      color: var(--color-foreground);
+    }
+    .navigation-menu-item:hover { background-color: var(--color-muted); }
+}

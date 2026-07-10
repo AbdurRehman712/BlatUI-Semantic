@@ -1,0 +1,28 @@
+/* ============================================================
+ * BlatUI Semantic — * ANIMATED BEAM (animated-beam)
+ * Auto-generated from semantic-base.css (line 4973)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .aurora {
+      position: relative;
+      overflow: hidden;
+    }
+    .aurora-bg {
+      position: absolute;
+      inset: -50%;
+      background: radial-gradient(ellipse at 30% 50%, var(--color-primary-light) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 20%, var(--color-info-light) 0%, transparent 50%),
+                  radial-gradient(ellipse at 50% 80%, var(--color-secondary-light) 0%, transparent 50%);
+      opacity: 0.3;
+      animation: aurora-drift 15s ease-in-out infinite alternate;
+      pointer-events: none;
+    }
+    @keyframes aurora-drift {
+      0% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(10%, 5%) scale(1.1); }
+      100% { transform: translate(-5%, -5%) scale(0.95); }
+    }
+}

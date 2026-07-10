@@ -1,0 +1,32 @@
+/* ============================================================
+ * BlatUI Semantic — * PROMPT INPUT (prompt-input) — multi-line AI prompt
+ * Auto-generated from semantic-base.css (line 2881)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .prompt-input {
+      display: flex;
+      align-items: flex-end;
+      gap: 0.5rem;
+      padding: 0.5rem;
+      border: 1px solid var(--color-input);
+      border-radius: var(--radius-xl);
+      background-color: var(--color-background);
+      transition: border-color 150ms ease;
+    }
+    .prompt-input:focus-within { border-color: var(--color-ring); }
+    .prompt-input textarea {
+      flex: 1;
+      border: none;
+      outline: none;
+      resize: none;
+      font-size: 0.875rem;
+      background: transparent;
+      color: var(--color-foreground);
+      min-height: 1.5rem;
+      max-height: 10rem;
+      padding: 0.25rem;
+    }
+}

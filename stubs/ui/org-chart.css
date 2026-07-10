@@ -1,0 +1,41 @@
+/* ============================================================
+ * BlatUI Semantic — * ORG CHART (org-chart)
+ * Auto-generated from semantic-base.css (line 5624)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .org-chart { display: flex; flex-direction: column; align-items: center; gap: 2rem; }
+    .org-chart-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.75rem 1.25rem;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      background-color: var(--color-card);
+      min-width: 10rem;
+      text-align: center;
+      cursor: pointer;
+      transition: box-shadow 150ms ease;
+    }
+    .org-chart-node:hover { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+    .org-chart-children {
+      display: flex;
+      gap: 2rem;
+      padding-top: 2rem;
+      position: relative;
+    }
+    .org-chart-children::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 50%;
+      height: 2rem;
+      border-left: 2px solid var(--color-border);
+      border-right: 2px solid var(--color-border);
+    }
+}

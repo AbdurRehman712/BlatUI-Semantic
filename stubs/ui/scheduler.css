@@ -1,0 +1,37 @@
+/* ============================================================
+ * BlatUI Semantic — * SCHEDULER (scheduler)
+ * Auto-generated from semantic-base.css (line 5574)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .scheduler {
+      overflow-x: auto;
+      font-size: 0.8125rem;
+    }
+    .scheduler-timeline {
+      display: flex;
+      min-height: 3rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .scheduler-slot {
+      flex: 1;
+      min-width: 4rem;
+      padding: 0.5rem;
+      text-align: center;
+      border-left: 1px solid var(--color-border);
+      font-weight: 500;
+      color: var(--color-muted-foreground);
+    }
+    .scheduler-event {
+      padding: 0.25rem 0.5rem;
+      border-radius: var(--radius-sm);
+      background-color: color-mix(in srgb, var(--color-primary) 15%, transparent);
+      color: var(--color-primary);
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: background-color 150ms ease;
+    }
+    .scheduler-event:hover { background-color: color-mix(in srgb, var(--color-primary) 25%, transparent); }
+}

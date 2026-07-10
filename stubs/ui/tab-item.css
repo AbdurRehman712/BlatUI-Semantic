@@ -1,0 +1,25 @@
+/* ============================================================
+ * BlatUI Semantic — * TAB ITEM (tab-item) — individual tab element
+ * Auto-generated from semantic-base.css (line 3709)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .tab-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.625rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--color-muted-foreground);
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      transition: all 150ms ease;
+      white-space: nowrap;
+    }
+    .tab-item:hover { color: var(--color-foreground); }
+    .tab-item.active { color: var(--color-primary); }
+}

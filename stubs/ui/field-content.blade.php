@@ -1,0 +1,3 @@
+<div data-slot="field-content" {{ $attributes->merge(['class' => 'field-content']) }}>
+    {{ $slot }}
+</div>

@@ -1,0 +1,109 @@
+/* ============================================================
+ * BlatUI Semantic — * MENUBAR (menubar)
+ * Auto-generated from semantic-base.css (line 3904)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .menubar {
+      display: flex;
+      align-items: center;
+      gap: 0.125rem;
+      background-color: var(--color-muted);
+      border-radius: var(--radius-lg);
+      padding: 0.25rem;
+    }
+    .menubar-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.375rem 0.625rem;
+      font-size: 0.875rem;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: background-color 150ms ease;
+      color: var(--color-foreground);
+      border: none;
+      background: none;
+      font-weight: 500;
+    }
+    .menubar-trigger:hover { background-color: var(--color-background); }
+    .menubar-content {
+      position: absolute;
+      z-index: 50;
+      min-width: 14rem;
+      background-color: var(--color-popover);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      padding: 0.375rem;
+      font-size: 0.875rem;
+    }
+    .menubar-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.375rem 0.625rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: background-color 150ms ease;
+      color: var(--color-foreground);
+      border: none;
+      background: none;
+      text-align: left;
+      font-size: 0.875rem;
+    }
+    .menubar-item:hover { background-color: var(--color-muted); }
+    .menubar-separator {
+      height: 1px;
+      background-color: var(--color-border);
+      margin: 0.25rem 0.5rem;
+    }
+    .menubar-label {
+      padding: 0.375rem 0.625rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-muted-foreground);
+    }
+    .menubar-shortcut { margin-left: auto; font-size: 0.75rem; color: var(--color-muted-foreground); }
+    .menubar-sub-trigger {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0.375rem 0.625rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: background-color 150ms ease;
+      border: none;
+      background: none;
+      font-size: 0.875rem;
+      text-align: left;
+    }
+    .menubar-sub-trigger:hover { background-color: var(--color-muted); }
+    .menubar-sub-content {
+      position: absolute;
+      z-index: 50;
+      min-width: 14rem;
+      background-color: var(--color-popover);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      padding: 0.375rem;
+    }
+    .menubar-checkbox-item,
+    .menubar-radio-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.375rem 0.625rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+    }
+    .menubar-checkbox-item:hover,
+    .menubar-radio-item:hover { background-color: var(--color-muted); }
+}

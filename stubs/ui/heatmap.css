@@ -1,0 +1,23 @@
+/* ============================================================
+ * BlatUI Semantic — * HEATMAP (heatmap)
+ * Auto-generated from semantic-base.css (line 5507)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .heatmap {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(1rem, 1fr));
+      gap: 2px;
+    }
+    .heatmap-cell {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 2px;
+      background-color: color-mix(in srgb, var(--color-primary) calc(var(--heat, 0) * 100%), var(--color-muted));
+      cursor: pointer;
+      transition: transform 100ms ease;
+    }
+    .heatmap-cell:hover { transform: scale(1.5); z-index: 1; }
+}

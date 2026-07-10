@@ -1,0 +1,82 @@
+/* ============================================================
+ * BlatUI Semantic — * ALERT (alert)
+ * Auto-generated from semantic-base.css (line 374)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .alert {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      border-radius: var(--radius-lg);
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--color-border);
+      background-color: var(--color-background);
+      color: var(--color-foreground);
+      font-size: 0.875rem;
+    }
+  
+    .alert-primary {
+      background-color: color-mix(in srgb, var(--color-primary) 10%, var(--color-background));
+      color: var(--color-primary);
+      border-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
+    }
+    .alert-secondary {
+      background-color: color-mix(in srgb, var(--color-secondary) 10%, var(--color-background));
+      color: var(--color-secondary);
+      border-color: color-mix(in srgb, var(--color-secondary) 30%, transparent);
+    }
+    .alert-accent {
+      background-color: color-mix(in srgb, var(--color-accent) 10%, var(--color-background));
+      color: var(--color-accent);
+      border-color: color-mix(in srgb, var(--color-accent) 30%, transparent);
+    }
+    .alert-info {
+      background-color: color-mix(in srgb, var(--color-info) 10%, var(--color-background));
+      color: var(--color-info);
+      border-color: color-mix(in srgb, var(--color-info) 30%, transparent);
+    }
+    .alert-success {
+      background-color: color-mix(in srgb, var(--color-success) 10%, var(--color-background));
+      color: var(--color-success);
+      border-color: color-mix(in srgb, var(--color-success) 30%, transparent);
+    }
+    .alert-warning {
+      background-color: color-mix(in srgb, var(--color-warning) 10%, var(--color-background));
+      color: var(--color-warning);
+      border-color: color-mix(in srgb, var(--color-warning) 30%, transparent);
+    }
+    .alert-error {
+      background-color: color-mix(in srgb, var(--color-error) 10%, var(--color-background));
+      color: var(--color-error);
+      border-color: color-mix(in srgb, var(--color-error) 30%, transparent);
+    }
+  
+    .alert-outline {
+      background-color: transparent;
+      border-width: 2px;
+    }
+    .alert-soft {
+      background-color: color-mix(in srgb, currentColor 8%, transparent);
+      border-color: transparent;
+    }
+    .alert-dash {
+      border-style: dashed;
+    }
+  
+    .alert-title {
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+    .alert-description {
+      font-size: 0.8125rem;
+      color: var(--color-muted-foreground);
+    }
+    .alert-actions {
+      margin-left: auto;
+      display: flex;
+      gap: 0.5rem;
+    }
+}

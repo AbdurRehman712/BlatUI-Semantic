@@ -1,0 +1,21 @@
+/* ============================================================
+ * BlatUI Semantic — * PARALLAX (parallax)
+ * Auto-generated from semantic-base.css (line 5032)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .confetti-piece {
+      position: fixed;
+      width: 0.5rem;
+      height: 0.5rem;
+      pointer-events: none;
+      z-index: 100;
+      animation: confetti-fall var(--confetti-duration, 3s) ease-out forwards;
+    }
+    @keyframes confetti-fall {
+      0% { opacity: 1; transform: translateY(-10px) rotate(0deg) scale(1); }
+      100% { opacity: 0; transform: translateY(100vh) rotate(720deg) scale(0.5); }
+    }
+}

@@ -1,0 +1,7 @@
+/* ============================================================
+ * BlatUI Semantic — * DATE / TIME PICKER (date-picker, datetime-picker, time-field) (alias for date-picker)
+ * Auto-generated from semantic-base.css (line 2520)
+ * ============================================================ */
+
+@reference "tailwindcss";
+@import "./date-picker.css";

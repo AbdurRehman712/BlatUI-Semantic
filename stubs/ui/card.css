@@ -1,0 +1,96 @@
+/* ============================================================
+ * BlatUI Semantic — * CARD (card)
+ * Auto-generated from semantic-base.css (line 454)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .card {
+      display: flex;
+      flex-direction: column;
+      border-radius: var(--radius-xl);
+      background-color: var(--color-card);
+      color: var(--color-card-foreground);
+      border: 1px solid var(--color-border);
+      overflow: hidden;
+      transition: box-shadow 200ms ease;
+    }
+  
+    .card-shadow {
+      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    }
+    .card-shadow:hover {
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+  
+    .card-bordered {
+      border: 1px solid var(--color-border);
+    }
+    .card-bordered-0 {
+      border: none;
+    }
+  
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 1.5rem;
+      flex: 1 1 auto;
+    }
+  
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+  
+    .card-footer {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.5rem;
+      border-top: 1px solid var(--color-border);
+    }
+  
+    .card-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+  
+    .card-image {
+      display: flex;
+      overflow: hidden;
+    }
+    .card-image img {
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .card-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+  
+    .card-compact .card-body { padding: 1rem; }
+    .card-compact .card-header { padding: 0.75rem 1rem; }
+    .card-compact .card-footer { padding: 0.75rem 1rem; }
+  
+    .card-side {
+      flex-direction: row;
+    }
+    .card-side .card-image {
+      width: 40%;
+      max-width: 16rem;
+    }
+  
+    .card-normal .card-body { padding: 1.5rem; }
+    .card-normal .card-header { padding: 1rem 1.5rem; }
+    .card-normal .card-footer { padding: 1rem 1.5rem; }
+}

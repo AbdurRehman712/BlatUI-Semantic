@@ -1,0 +1,61 @@
+/* ============================================================
+ * BlatUI Semantic — * RATING (rating)
+ * Auto-generated from semantic-base.css (line 1635)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .rating {
+      display: inline-flex;
+      align-items: center;
+      gap: 0;
+    }
+  
+    .rating input {
+      appearance: none;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: var(--color-muted);
+      mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'%3e%3cpolygon points='12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2'/%3e%3c/svg%3e");
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      cursor: pointer;
+      transition: background-color 100ms ease;
+    }
+  
+    .rating input:checked {
+      background-color: var(--color-warning);
+    }
+    .rating input:hover {
+      background-color: var(--color-warning);
+      opacity: 0.8;
+    }
+    .rating input:focus-visible {
+      outline: 2px solid var(--color-ring);
+      outline-offset: 2px;
+    }
+    .rating input:disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+  
+    .rating-hidden {
+      width: 0.5rem;
+      background-color: transparent;
+      mask-image: none;
+    }
+  
+    .rating-half input:first-child ~ input {
+      width: 0.75rem;
+    }
+    .rating-half input:first-child ~ input:nth-child(even) {
+      mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 24' fill='none' stroke='currentColor' stroke-width='2'%3e%3cpolygon points='12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2' clip-path='inset(0 50% 0 0)'/%3e%3c/svg%3e");
+    }
+  
+    .rating-xs input { width: 1rem; height: 1rem; }
+    .rating-sm input { width: 1.25rem; height: 1.25rem; }
+    .rating-md input { width: 1.5rem; height: 1.5rem; }
+    .rating-lg input { width: 2rem; height: 2rem; }
+}

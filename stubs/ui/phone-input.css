@@ -1,0 +1,27 @@
+/* ============================================================
+ * BlatUI Semantic — * PHONE INPUT (phone-input)
+ * Auto-generated from semantic-base.css (line 2601)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .phone-input {
+      display: flex;
+      align-items: stretch;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--color-input);
+      background-color: var(--color-background);
+    }
+    .phone-input .phone-input-code {
+      min-width: 5rem;
+      border: none;
+      border-right: 1px solid var(--color-input);
+      background: var(--color-muted);
+      font-size: 0.875rem;
+      padding: 0.25rem 0.5rem;
+    }
+    .phone-input .input { border: none; border-radius: 0; }
+    .phone-input .input:focus { box-shadow: none; }
+}

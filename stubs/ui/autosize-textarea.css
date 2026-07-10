@@ -1,0 +1,23 @@
+/* ============================================================
+ * BlatUI Semantic — * AUTO SIZE TEXTAREA (autosize-textarea)
+ * Auto-generated from semantic-base.css (line 3007)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .autosize-textarea {
+      width: 100%;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      color: var(--color-foreground);
+      background-color: var(--color-background);
+      border: 1px solid var(--color-input);
+      border-radius: var(--radius-md);
+      resize: none;
+      overflow: hidden;
+      transition: border-color 150ms ease;
+    }
+    .autosize-textarea:focus { border-color: var(--color-ring); box-shadow: 0 0 0 1px var(--color-ring); outline: none; }
+}

@@ -1,0 +1,89 @@
+/* ============================================================
+ * BlatUI Semantic — Dark Mode Overrides
+ *
+ * Import this AFTER your component CSS files to get dark mode styles.
+ * Not needed if you import the full semantic-base.css bundle.
+ *
+ *   @reference "tailwindcss";
+ *   @import "vendor/blatui/dark.css";
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer utilities {
+  .dark .alert-primary {
+    background-color: color-mix(in srgb, var(--color-primary) 20%, transparent);
+  }
+
+  .dark .alert-secondary {
+    background-color: color-mix(in srgb, var(--color-secondary) 20%, transparent);
+  }
+
+  .dark .alert-info {
+    background-color: color-mix(in srgb, var(--color-info) 20%, transparent);
+  }
+
+  .dark .alert-success {
+    background-color: color-mix(in srgb, var(--color-success) 20%, transparent);
+  }
+
+  .dark .alert-warning {
+    background-color: color-mix(in srgb, var(--color-warning) 20%, transparent);
+  }
+
+  .dark .alert-error {
+    background-color: color-mix(in srgb, var(--color-error) 20%, transparent);
+  }
+
+  .dark .card {
+    background-color: color-mix(in srgb, var(--color-card) 95%, white);
+  }
+
+  .dark .modal,
+  .dark .sheet,
+  .dark .alert-dialog,
+  .dark .command {
+    background-color: color-mix(in srgb, var(--color-background) 95%, white);
+  }
+
+  .dark .loading-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .dark .terminal {
+    background-color: #11111b;
+  }
+  .dark .terminal-header {
+    background-color: #181825;
+  }
+
+  .dark .sidebar {
+    background-color: color-mix(in srgb, var(--color-background) 97%, white);
+  }
+
+  .dark .kanban-column {
+    background-color: color-mix(in srgb, var(--color-muted) 90%, white);
+  }
+
+  .dark .empty-content,
+  .dark .popover-content,
+  .dark .context-menu-content,
+  .dark .dropdown-menu-content,
+  .dark .menubar-content,
+  .dark .hover-card-content {
+    background-color: color-mix(in srgb, var(--color-popover) 95%, white);
+  }
+
+  .dark .autocomplete-panel,
+  .dark .combobox-panel,
+  .dark .select-content,
+  .dark .command-dialog-overlay,
+  .dark .notification-center-panel,
+  .dark .mini-cart-panel {
+    background-color: color-mix(in srgb, var(--color-popover) 95%, white);
+  }
+
+  .dark .spotlight-card::before {
+    background: radial-gradient(600px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%), rgba(129, 140, 248, 0.15), transparent 40%);
+  }
+}

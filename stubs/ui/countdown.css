@@ -1,0 +1,26 @@
+/* ============================================================
+ * BlatUI Semantic — * COUNTDOWN (countdown)
+ * Auto-generated from semantic-base.css (line 2080)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .countdown {
+      display: inline-flex;
+      gap: 0.25rem;
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
+    }
+  
+    .countdown > * {
+      display: inline-block;
+      overflow: hidden;
+      animation: countdown-flip 1s ease-in-out;
+    }
+  
+    @keyframes countdown-flip {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(0); }
+    }
+}

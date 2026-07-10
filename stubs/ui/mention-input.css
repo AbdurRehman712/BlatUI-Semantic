@@ -1,0 +1,28 @@
+/* ============================================================
+ * BlatUI Semantic — * MENTION INPUT (mention-input)
+ * Auto-generated from semantic-base.css (line 2909)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .mention-input {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--color-input);
+      border-radius: var(--radius-md);
+      background-color: var(--color-background);
+      font-size: 0.875rem;
+      min-height: 2.5rem;
+      cursor: text;
+    }
+    .mention-input:focus { border-color: var(--color-ring); outline: none; }
+    .mention-input .mention {
+      display: inline-flex;
+      align-items: center;
+      padding: 0 0.25rem;
+      background-color: color-mix(in srgb, var(--color-primary) 15%, transparent);
+      color: var(--color-primary);
+      border-radius: var(--radius-sm);
+      font-weight: 500;
+    }
+}

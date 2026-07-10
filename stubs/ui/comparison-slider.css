@@ -1,0 +1,61 @@
+/* ============================================================
+ * BlatUI Semantic — * COMPARISON SLIDER (comparison-slider)
+ * Auto-generated from semantic-base.css (line 5229)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .comparison-slider {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+      cursor: ew-resize;
+      user-select: none;
+      width: 100%;
+    }
+    .comparison-slider img {
+      display: block;
+      width: 100%;
+    }
+    .comparison-slider .comparison-after {
+      position: absolute;
+      inset: 0;
+      width: 50%;
+      overflow: hidden;
+    }
+    .comparison-slider .comparison-after img {
+      width: 200%;
+      max-width: 200%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left;
+    }
+    .comparison-slider .comparison-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      background: white;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      z-index: 10;
+      cursor: ew-resize;
+    }
+    .comparison-slider .comparison-handle::before {
+      content: "⟷";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      border-radius: var(--radius-full);
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+}

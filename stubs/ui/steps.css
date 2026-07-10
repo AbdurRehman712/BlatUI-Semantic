@@ -1,0 +1,84 @@
+/* ============================================================
+ * BlatUI Semantic — * STEPS (steps)
+ * Auto-generated from semantic-base.css (line 1506)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .steps {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      counter-reset: step;
+    }
+  
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1 1 0;
+      position: relative;
+      font-size: 0.75rem;
+      color: var(--color-muted-foreground);
+      counter-increment: step;
+    }
+  
+    .step::before {
+      content: counter(step);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: var(--radius-full);
+      background-color: var(--color-muted);
+      color: var(--color-muted-foreground);
+      font-size: 0.75rem;
+      font-weight: 600;
+      z-index: 1;
+      transition: background-color 200ms ease, color 200ms ease;
+    }
+  
+    .step::after {
+      content: "";
+      position: absolute;
+      top: 1rem;
+      left: calc(50% + 1rem);
+      right: calc(-50% + 1rem);
+      height: 2px;
+      background-color: var(--color-muted);
+      transform: translateY(-50%);
+      transition: background-color 200ms ease;
+    }
+  
+    .step:last-child::after {
+      display: none;
+    }
+  
+    .step-primary::before {
+      background-color: var(--color-primary);
+      color: var(--color-primary-foreground);
+    }
+    .step-primary::after {
+      background-color: var(--color-primary);
+    }
+  
+    .step-secondary::before { background-color: var(--color-secondary); color: var(--color-secondary-foreground); }
+    .step-secondary::after { background-color: var(--color-secondary); }
+  
+    .step-info::before { background-color: var(--color-info); color: var(--color-info-foreground); }
+    .step-info::after { background-color: var(--color-info); }
+  
+    .step-success::before { background-color: var(--color-success); color: var(--color-success-foreground); }
+    .step-success::after { background-color: var(--color-success); }
+  
+    .step-warning::before { background-color: var(--color-warning); color: var(--color-warning-foreground); }
+    .step-warning::after { background-color: var(--color-warning); }
+  
+    .step-error::before { background-color: var(--color-error); color: var(--color-error-foreground); }
+    .step-error::after { background-color: var(--color-error); }
+  
+    .step-neutral::before { background-color: var(--color-neutral); color: var(--color-neutral-foreground); }
+    .step-neutral::after { background-color: var(--color-neutral); }
+}

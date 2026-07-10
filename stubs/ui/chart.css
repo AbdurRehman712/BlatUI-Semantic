@@ -1,0 +1,20 @@
+/* ============================================================
+ * BlatUI Semantic — * CHART / CHART CONTAINER (chart)
+ * Auto-generated from semantic-base.css (line 5476)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .chart-container { position: relative; width: 100%; }
+    .chart-container canvas { max-width: 100%; }
+    .chart-tooltip-content {
+      padding: 0.5rem 0.75rem;
+      background-color: var(--color-foreground);
+      color: var(--color-background);
+      border-radius: var(--radius-md);
+      font-size: 0.8125rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      pointer-events: none;
+    }
+}

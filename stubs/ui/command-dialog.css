@@ -1,0 +1,7 @@
+/* ============================================================
+ * BlatUI Semantic — * COMMAND PALETTE (command, command-dialog) (alias for command)
+ * Auto-generated from semantic-base.css (line 3369)
+ * ============================================================ */
+
+@reference "tailwindcss";
+@import "./command.css";

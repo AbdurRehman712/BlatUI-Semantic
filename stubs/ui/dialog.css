@@ -1,0 +1,7 @@
+/* ============================================================
+ * BlatUI Semantic — * OVERLAY / MODAL (modal, dialog) (alias for modal)
+ * Auto-generated from semantic-base.css (line 3026)
+ * ============================================================ */
+
+@reference "tailwindcss";
+@import "./modal.css";

@@ -1,0 +1,7 @@
+/* ============================================================
+ * BlatUI Semantic — * DATA TABLE (data-table, server-table) — wrapper around table (alias for data-table)
+ * Auto-generated from semantic-base.css (line 4233)
+ * ============================================================ */
+
+@reference "tailwindcss";
+@import "./data-table.css";

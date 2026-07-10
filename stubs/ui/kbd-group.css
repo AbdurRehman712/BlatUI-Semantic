@@ -1,0 +1,20 @@
+/* ============================================================
+ * BlatUI Semantic — * KBD GROUP (kbd-group)
+ * Auto-generated from semantic-base.css (line 4804)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .kbd-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.125rem;
+    }
+    .kbd-group .kbd + .kbd::before {
+      content: "+";
+      margin-right: 0.125rem;
+      font-size: 0.75rem;
+      color: var(--color-muted-foreground);
+    }
+}

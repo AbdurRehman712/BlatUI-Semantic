@@ -1,0 +1,47 @@
+/* ============================================================
+ * BlatUI Semantic — * KANBAN (kanban)
+ * Auto-generated from semantic-base.css (line 4342)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .kanban {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      padding: 0.5rem;
+    }
+    .kanban-column {
+      min-width: 18rem;
+      max-width: 22rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      background-color: var(--color-muted);
+      border-radius: var(--radius-xl);
+      padding: 1rem;
+    }
+    .kanban-column-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 0.8125rem;
+      color: var(--color-muted-foreground);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0 0.25rem;
+    }
+    .kanban-item {
+      padding: 0.75rem;
+      background-color: var(--color-background);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      cursor: grab;
+      transition: box-shadow 150ms ease;
+      font-size: 0.875rem;
+    }
+    .kanban-item:hover { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+    .kanban-item:active { cursor: grabbing; }
+}

@@ -1,0 +1,25 @@
+/* ============================================================
+ * BlatUI Semantic — * JSON VIEWER (json-viewer)
+ * Auto-generated from semantic-base.css (line 4385)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .json-viewer {
+      background-color: var(--color-muted);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 1rem;
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+    .json-viewer .json-key { color: var(--color-primary); }
+    .json-viewer .json-string { color: var(--color-success); }
+    .json-viewer .json-number { color: var(--color-info); }
+    .json-viewer .json-boolean { color: var(--color-warning); }
+    .json-viewer .json-null { color: var(--color-muted-foreground); }
+}

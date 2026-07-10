@@ -1,0 +1,39 @@
+/* ============================================================
+ * BlatUI Semantic — * NUMBER INPUT (number-input)
+ * Auto-generated from semantic-base.css (line 2566)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .number-input {
+      display: inline-flex;
+      align-items: stretch;
+      border: 1px solid var(--color-input);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background-color: var(--color-background);
+    }
+    .number-input .input {
+      border: none;
+      border-radius: 0;
+      width: 4rem;
+      text-align: center;
+      height: 2.5rem;
+    }
+    .number-input .input:focus { box-shadow: none; }
+    .number-input-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      cursor: pointer;
+      transition: background-color 150ms ease;
+      border: none;
+      background: var(--color-muted);
+      color: var(--color-foreground);
+      font-size: 1rem;
+      user-select: none;
+    }
+    .number-input-btn:hover { background-color: color-mix(in srgb, var(--color-muted) 80%, black); }
+}

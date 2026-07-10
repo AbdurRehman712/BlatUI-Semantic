@@ -1,0 +1,96 @@
+/* ============================================================
+ * BlatUI Semantic — * TOOLTIP (tooltip)
+ * Auto-generated from semantic-base.css (line 1093)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .tooltip {
+      position: relative;
+      display: inline-flex;
+      cursor: pointer;
+    }
+  
+    .tooltip::before {
+      content: attr(data-tip);
+      position: absolute;
+      z-index: 50;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.8125rem;
+      line-height: 1.25;
+      font-weight: 500;
+      white-space: nowrap;
+      background-color: var(--color-foreground);
+      color: var(--color-background);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 150ms ease;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 0.375rem;
+    }
+  
+    .tooltip::after {
+      content: "";
+      position: absolute;
+      z-index: 50;
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid var(--color-foreground);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 150ms ease;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: -0.25rem;
+    }
+  
+    .tooltip:hover::before,
+    .tooltip:hover::after {
+      opacity: 1;
+    }
+  
+    .tooltip-open::before,
+    .tooltip-open::after {
+      opacity: 1;
+    }
+  
+    .tooltip-top::before { bottom: 100%; left: 50%; transform: translateX(-50%); margin-bottom: 0.375rem; }
+    .tooltip-top::after { bottom: 100%; left: 50%; transform: translateX(-50%); margin-bottom: -0.25rem; border-top-color: var(--color-foreground); border-bottom: none; }
+  
+    .tooltip-bottom::before { top: 100%; bottom: auto; left: 50%; transform: translateX(-50%); margin-top: 0.375rem; margin-bottom: 0; }
+    .tooltip-bottom::after { top: 100%; bottom: auto; left: 50%; transform: translateX(-50%); margin-top: -0.25rem; margin-bottom: 0; border-bottom: 6px solid var(--color-foreground); border-top: none; }
+  
+    .tooltip-left::before { top: 50%; right: 100%; left: auto; bottom: auto; transform: translateY(-50%); margin-right: 0.375rem; margin-bottom: 0; }
+    .tooltip-left::after { top: 50%; right: 100%; left: auto; bottom: auto; transform: translateY(-50%); margin-right: -0.25rem; margin-bottom: 0; border-left: 6px solid var(--color-foreground); border-right: none; border-top-color: transparent; }
+  
+    .tooltip-right::before { top: 50%; left: 100%; bottom: auto; transform: translateY(-50%); margin-left: 0.375rem; margin-bottom: 0; }
+    .tooltip-right::after { top: 50%; left: 100%; bottom: auto; transform: translateY(-50%); margin-left: -0.25rem; margin-bottom: 0; border-right: 6px solid var(--color-foreground); border-left: none; border-top-color: transparent; }
+  
+    .tooltip-primary::before { background-color: var(--color-primary); color: var(--color-primary-foreground); }
+    .tooltip-primary::after { border-top-color: var(--color-primary); }
+    .tooltip-primary.tooltip-bottom::after { border-bottom-color: var(--color-primary); border-top-color: transparent; }
+    .tooltip-primary.tooltip-left::after { border-left-color: var(--color-primary); border-top-color: transparent; }
+    .tooltip-primary.tooltip-right::after { border-right-color: var(--color-primary); border-top-color: transparent; }
+  
+    .tooltip-secondary::before { background-color: var(--color-secondary); color: var(--color-secondary-foreground); }
+    .tooltip-secondary::after { border-top-color: var(--color-secondary); }
+    .tooltip-secondary.tooltip-bottom::after { border-bottom-color: var(--color-secondary); }
+    .tooltip-secondary.tooltip-left::after { border-left-color: var(--color-secondary); }
+    .tooltip-secondary.tooltip-right::after { border-right-color: var(--color-secondary); }
+  
+    .tooltip-info::before { background-color: var(--color-info); color: var(--color-info-foreground); }
+    .tooltip-info::after { border-top-color: var(--color-info); }
+    .tooltip-success::before { background-color: var(--color-success); color: var(--color-success-foreground); }
+    .tooltip-success::after { border-top-color: var(--color-success); }
+    .tooltip-warning::before { background-color: var(--color-warning); color: var(--color-warning-foreground); }
+    .tooltip-warning::after { border-top-color: var(--color-warning); }
+    .tooltip-error::before { background-color: var(--color-error); color: var(--color-error-foreground); }
+    .tooltip-error::after { border-top-color: var(--color-error); }
+}

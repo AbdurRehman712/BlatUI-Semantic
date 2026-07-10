@@ -1,0 +1,28 @@
+/* ============================================================
+ * BlatUI Semantic — * FILE UPLOAD (file-upload) — drag & drop zone
+ * Auto-generated from semantic-base.css (line 2983)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .file-upload { display: flex; flex-direction: column; gap: 0.5rem; }
+    .file-upload-dropzone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 2rem;
+      border: 2px dashed var(--color-input);
+      border-radius: var(--radius-lg);
+      background-color: var(--color-muted);
+      cursor: pointer;
+      transition: border-color 150ms ease, background-color 150ms ease;
+      text-align: center;
+    }
+    .file-upload-dropzone:hover,
+    .file-upload-dropzone-active { border-color: var(--color-primary); background-color: color-mix(in srgb, var(--color-primary) 5%, transparent); }
+    .file-upload-dropzone .file-upload-icon { font-size: 2rem; color: var(--color-muted-foreground); }
+    .file-upload-dropzone .file-upload-text { font-size: 0.875rem; color: var(--color-muted-foreground); }
+}

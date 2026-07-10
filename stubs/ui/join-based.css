@@ -1,0 +1,23 @@
+/* ============================================================
+ * BlatUI Semantic — * PAGINATION (join-based)
+ * Auto-generated from semantic-base.css (line 2360)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .pagination {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+  
+    .pagination .btn {
+      min-width: 2.5rem;
+    }
+    .pagination .btn-active {
+      background-color: var(--color-primary);
+      color: var(--color-primary-foreground);
+      border-color: var(--color-primary);
+    }
+}

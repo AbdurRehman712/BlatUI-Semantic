@@ -1,0 +1,186 @@
+/* ============================================================
+ * BlatUI Semantic — * BUTTON (btn)
+ * Auto-generated from semantic-base.css (line 100)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-weight: 500;
+      line-height: 1;
+      white-space: nowrap;
+      border-radius: var(--radius-md);
+      border: 1px solid transparent;
+      transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      text-decoration: none;
+      user-select: none;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      height: 2.5rem;
+    }
+  
+    .btn:focus-visible {
+      outline: 2px solid var(--color-ring);
+      outline-offset: 2px;
+    }
+  
+    .btn:disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+  
+    /* Variants */
+    .btn-primary {
+      background-color: var(--color-primary);
+      color: var(--color-primary-foreground);
+      border-color: var(--color-primary);
+    }
+    .btn-primary:hover {
+      background-color: color-mix(in srgb, var(--color-primary) 90%, black);
+      border-color: color-mix(in srgb, var(--color-primary) 90%, black);
+    }
+  
+    .btn-secondary {
+      background-color: var(--color-secondary);
+      color: var(--color-secondary-foreground);
+      border-color: var(--color-secondary);
+    }
+    .btn-secondary:hover {
+      background-color: color-mix(in srgb, var(--color-secondary) 90%, black);
+    }
+  
+    .btn-accent {
+      background-color: var(--color-accent);
+      color: var(--color-accent-foreground);
+      border-color: var(--color-accent);
+    }
+    .btn-accent:hover {
+      background-color: color-mix(in srgb, var(--color-accent) 90%, black);
+    }
+  
+    .btn-neutral {
+      background-color: var(--color-neutral);
+      color: var(--color-neutral-foreground);
+      border-color: var(--color-neutral);
+    }
+    .btn-neutral:hover {
+      background-color: color-mix(in srgb, var(--color-neutral) 90%, black);
+    }
+  
+    .btn-info {
+      background-color: var(--color-info);
+      color: var(--color-info-foreground);
+      border-color: var(--color-info);
+    }
+    .btn-info:hover {
+      background-color: color-mix(in srgb, var(--color-info) 90%, black);
+    }
+  
+    .btn-success {
+      background-color: var(--color-success);
+      color: var(--color-success-foreground);
+      border-color: var(--color-success);
+    }
+    .btn-success:hover {
+      background-color: color-mix(in srgb, var(--color-success) 90%, black);
+    }
+  
+    .btn-warning {
+      background-color: var(--color-warning);
+      color: var(--color-warning-foreground);
+      border-color: var(--color-warning);
+    }
+    .btn-warning:hover {
+      background-color: color-mix(in srgb, var(--color-warning) 90%, black);
+    }
+  
+    .btn-error {
+      background-color: var(--color-error);
+      color: var(--color-error-foreground);
+      border-color: var(--color-error);
+    }
+    .btn-error:hover {
+      background-color: color-mix(in srgb, var(--color-error) 90%, black);
+    }
+  
+    .btn-ghost {
+      background-color: transparent;
+      color: var(--color-foreground);
+      border-color: transparent;
+    }
+    .btn-ghost:hover {
+      background-color: var(--color-muted);
+    }
+  
+    .btn-outline {
+      background-color: transparent;
+      color: var(--color-foreground);
+      border-color: var(--color-border);
+    }
+    .btn-outline:hover {
+      background-color: var(--color-muted);
+    }
+  
+    .btn-link {
+      background-color: transparent;
+      color: var(--color-primary);
+      border-color: transparent;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .btn-link:hover {
+      color: color-mix(in srgb, var(--color-primary) 80%, black);
+    }
+  
+    .btn-soft {
+      background-color: color-mix(in srgb, var(--color-primary) 15%, transparent);
+      color: var(--color-primary);
+      border-color: transparent;
+    }
+    .btn-soft:hover {
+      background-color: color-mix(in srgb, var(--color-primary) 25%, transparent);
+    }
+  
+    .btn-dash {
+      background-color: transparent;
+      color: var(--color-foreground);
+      border-color: var(--color-border);
+      border-style: dashed;
+    }
+    .btn-dash:hover {
+      background-color: var(--color-muted);
+    }
+  
+    /* Sizes */
+    .btn-xs { height: 1.5rem; padding: 0.25rem 0.5rem; font-size: 0.75rem; }
+    .btn-sm { height: 2rem; padding: 0.375rem 0.75rem; font-size: 0.8125rem; }
+    .btn-md { height: 2.5rem; padding: 0.5rem 1rem; font-size: 0.875rem; }
+    .btn-lg { height: 3rem; padding: 0.625rem 1.25rem; font-size: 1rem; }
+    .btn-xl { height: 3.5rem; padding: 0.75rem 1.5rem; font-size: 1.125rem; }
+  
+    /* Shapes */
+    .btn-circle { border-radius: var(--radius-full); padding: 0; width: 2.5rem; }
+    .btn-circle.btn-xs { width: 1.5rem; }
+    .btn-circle.btn-sm { width: 2rem; }
+    .btn-circle.btn-lg { width: 3rem; }
+    .btn-circle.btn-xl { width: 3.5rem; }
+  
+    .btn-square { border-radius: var(--radius-md); padding: 0; width: 2.5rem; }
+    .btn-square.btn-xs { width: 1.5rem; }
+    .btn-square.btn-sm { width: 2rem; }
+    .btn-square.btn-lg { width: 3rem; }
+    .btn-square.btn-xl { width: 3.5rem; }
+  
+    .btn-block { width: 100%; }
+    .btn-wide { padding-left: 2rem; padding-right: 2rem; }
+  
+    .btn-active {
+      background-color: color-mix(in srgb, currentColor 20%, transparent);
+    }
+}

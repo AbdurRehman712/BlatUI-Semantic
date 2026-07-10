@@ -1,0 +1,21 @@
+/* ============================================================
+ * BlatUI Semantic — * GRADIENT TEXT (gradient-text)
+ * Auto-generated from semantic-base.css (line 5137)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .gradient-text {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-size: 200% 200%;
+      animation: gradient-shift 4s ease-in-out infinite alternate;
+    }
+    @keyframes gradient-shift {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+}

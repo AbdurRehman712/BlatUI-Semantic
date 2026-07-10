@@ -1,0 +1,34 @@
+/* ============================================================
+ * BlatUI Semantic — * GANTT (gantt)
+ * Auto-generated from semantic-base.css (line 4312)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .gantt { display: flex; flex-direction: column; overflow-x: auto; font-size: 0.8125rem; }
+    .gantt-header { display: flex; border-bottom: 1px solid var(--color-border); }
+    .gantt-header-item {
+      flex: 1;
+      padding: 0.5rem;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.75rem;
+      color: var(--color-muted-foreground);
+      border-left: 1px solid var(--color-border);
+    }
+    .gantt-row {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--color-border);
+      min-height: 2rem;
+    }
+    .gantt-bar {
+      height: 1.25rem;
+      border-radius: var(--radius-sm);
+      background-color: var(--color-primary);
+      position: relative;
+      cursor: pointer;
+    }
+    .gantt-bar:hover { opacity: 0.85; }
+}

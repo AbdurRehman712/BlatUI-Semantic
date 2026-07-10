@@ -1,0 +1,35 @@
+/* ============================================================
+ * BlatUI Semantic — * LABEL (label / label-text)
+ * Auto-generated from semantic-base.css (line 933)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.375rem 0;
+      font-size: 0.875rem;
+      cursor: pointer;
+    }
+  
+    .label-text {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--color-foreground);
+      line-height: 1.25;
+    }
+  
+    .label-text-alt {
+      font-size: 0.75rem;
+      color: var(--color-muted-foreground);
+    }
+  
+    .label a.label-text-alt {
+      color: var(--color-primary);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+}

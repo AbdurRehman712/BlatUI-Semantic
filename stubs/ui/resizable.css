@@ -1,0 +1,36 @@
+/* ============================================================
+ * BlatUI Semantic — * RESIZABLE PANEL (resizable)
+ * Auto-generated from semantic-base.css (line 5356)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .resizable { display: flex; }
+    .resizable-panel {
+      flex: 1;
+      overflow: auto;
+      min-width: 0;
+    }
+    .resizable-handle {
+      flex-shrink: 0;
+      width: 4px;
+      cursor: col-resize;
+      background-color: transparent;
+      transition: background-color 150ms ease;
+      position: relative;
+    }
+    .resizable-handle:hover,
+    .resizable-handle:active { background-color: var(--color-ring); }
+    .resizable-handle::after {
+      content: "";
+      position: absolute;
+      inset: 0 -4px;
+    }
+    .resizable-vertical { flex-direction: column; }
+    .resizable-vertical .resizable-handle {
+      width: auto;
+      height: 4px;
+      cursor: row-resize;
+    }
+}

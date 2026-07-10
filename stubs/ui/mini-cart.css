@@ -1,0 +1,39 @@
+/* ============================================================
+ * BlatUI Semantic — * MINI CART (mini-cart)
+ * Auto-generated from semantic-base.css (line 5893)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .mini-cart { position: relative; display: inline-flex; }
+    .mini-cart-panel {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 50;
+      width: 22rem;
+      max-height: 28rem;
+      overflow-y: auto;
+      background-color: var(--color-popover);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      margin-top: 0.5rem;
+      padding: 1rem;
+    }
+    .mini-cart-item {
+      display: flex;
+      gap: 0.75rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .mini-cart-item:last-child { border-bottom: none; }
+    .mini-cart-item-image {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: var(--radius-md);
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+}

@@ -1,0 +1,37 @@
+/* ============================================================
+ * BlatUI Semantic — * TERMINAL (terminal)
+ * Auto-generated from semantic-base.css (line 4447)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .terminal {
+      background-color: #1e1e2e;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-size: 0.8125rem;
+      color: #cdd6f4;
+    }
+    .terminal-header {
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+      padding: 0.5rem 0.75rem;
+      background-color: #181825;
+    }
+    .terminal-dot {
+      width: 0.625rem;
+      height: 0.625rem;
+      border-radius: var(--radius-full);
+    }
+    .terminal-dot:nth-child(1) { background-color: #f38ba8; }
+    .terminal-dot:nth-child(2) { background-color: #f9e2af; }
+    .terminal-dot:nth-child(3) { background-color: #a6e3a1; }
+    .terminal pre {
+      padding: 0.75rem;
+      margin: 0;
+      overflow-x: auto;
+    }
+}

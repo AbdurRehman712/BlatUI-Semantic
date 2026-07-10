@@ -1,0 +1,58 @@
+/* ============================================================
+ * BlatUI Semantic — * STEPPER (stepper)
+ * Auto-generated from semantic-base.css (line 3802)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .stepper { display: flex; width: 100%; }
+    .stepper-horizontal { flex-direction: row; align-items: center; }
+    .stepper-vertical { flex-direction: column; align-items: flex-start; }
+    .stepper-item {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      position: relative;
+    }
+    .stepper-vertical .stepper-item { flex: none; width: 100%; }
+    .stepper-header { display: flex; flex-direction: column; align-items: center; gap: 0.25rem; }
+    .stepper-vertical .stepper-header { flex-direction: row; }
+    .stepper-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: var(--radius-full);
+      background-color: var(--color-muted);
+      color: var(--color-muted-foreground);
+      font-size: 0.75rem;
+      font-weight: 600;
+      transition: all 200ms ease;
+    }
+    .stepper-indicator.step-primary,
+    .stepper-item.active .stepper-indicator,
+    .stepper-item.completed .stepper-indicator {
+      background-color: var(--color-primary);
+      color: var(--color-primary-foreground);
+    }
+    .stepper-title { font-size: 0.8125rem; font-weight: 500; }
+    .stepper-description { font-size: 0.6875rem; color: var(--color-muted-foreground); }
+    .stepper-separator {
+      flex: 1;
+      height: 2px;
+      background-color: var(--color-border);
+      margin: 0 0.5rem;
+      transition: background-color 200ms ease;
+    }
+    .stepper-vertical .stepper-separator {
+      width: 2px;
+      height: 1.5rem;
+      margin: 0.25rem 0;
+      margin-left: 0.9375rem;
+    }
+    .stepper-separator.completed { background-color: var(--color-primary); }
+    .stepper-nav { display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem; }
+    .stepper-content { padding: 1rem 0; }
+}

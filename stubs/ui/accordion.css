@@ -1,0 +1,44 @@
+/* ============================================================
+ * BlatUI Semantic — * ACCORDION (accordion)
+ * Auto-generated from semantic-base.css (line 4128)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .accordion { display: flex; flex-direction: column; gap: 0.25rem; }
+    .accordion-item {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .accordion-trigger {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      text-align: left;
+      color: var(--color-foreground);
+      transition: background-color 150ms ease;
+    }
+    .accordion-trigger:hover { background-color: var(--color-muted); }
+    .accordion-trigger::after {
+      content: "+";
+      font-size: 1.125rem;
+      transition: transform 200ms ease;
+      color: var(--color-muted-foreground);
+    }
+    .accordion-item.open .accordion-trigger::after { transform: rotate(45deg); }
+    .accordion-content {
+      padding: 0 1rem 0.75rem;
+      font-size: 0.875rem;
+      color: var(--color-muted-foreground);
+      line-height: 1.5;
+    }
+}

@@ -1,0 +1,7 @@
+/* ============================================================
+ * BlatUI Semantic — * ITEM (generic list item with header/indicator/trailing) (alias for indicator)
+ * Auto-generated from semantic-base.css (line 4561)
+ * ============================================================ */
+
+@reference "tailwindcss";
+@import "./indicator.css";

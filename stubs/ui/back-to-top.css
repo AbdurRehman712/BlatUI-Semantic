@@ -1,0 +1,28 @@
+/* ============================================================
+ * BlatUI Semantic — * BACK TO TOP (back-to-top)
+ * Auto-generated from semantic-base.css (line 4104)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 40;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: var(--radius-full);
+      background-color: var(--color-primary);
+      color: var(--color-primary-foreground);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      transition: transform 150ms ease, opacity 200ms ease;
+    }
+    .back-to-top:hover { transform: translateY(-2px); }
+}

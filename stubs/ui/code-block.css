@@ -1,0 +1,33 @@
+/* ============================================================
+ * BlatUI Semantic — * CODE BLOCK (code-block)
+ * Auto-generated from semantic-base.css (line 4480)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .code-block {
+      background-color: var(--color-muted);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      font-size: 0.8125rem;
+    }
+    .code-block-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 0.75rem;
+      background-color: color-mix(in srgb, var(--color-muted) 80%, black);
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.75rem;
+      color: var(--color-muted-foreground);
+    }
+    .code-block pre {
+      padding: 0.75rem;
+      margin: 0;
+      overflow-x: auto;
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      line-height: 1.5;
+    }
+}

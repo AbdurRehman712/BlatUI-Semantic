@@ -1,0 +1,24 @@
+/* ============================================================
+ * BlatUI Semantic — * EDITABLE (editable)
+ * Auto-generated from semantic-base.css (line 2546)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .editable {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid transparent;
+      border-radius: var(--radius-md);
+      font-size: 0.875rem;
+      transition: border-color 150ms ease, background-color 150ms ease;
+      cursor: text;
+    }
+    .editable:hover { border-color: var(--color-input); }
+    .editable:focus {
+      border-color: var(--color-ring);
+      box-shadow: 0 0 0 1px var(--color-ring);
+      outline: none;
+      background-color: var(--color-background);
+    }
+}

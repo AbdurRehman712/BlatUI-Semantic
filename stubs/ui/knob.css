@@ -1,0 +1,32 @@
+/* ============================================================
+ * BlatUI Semantic — * KNOB (knob) — rotary control
+ * Auto-generated from semantic-base.css (line 2818)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .knob {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 4rem;
+      height: 4rem;
+      border-radius: var(--radius-full);
+      background: conic-gradient(var(--color-primary) var(--knob-pct, 0%), var(--color-muted) var(--knob-pct, 0%));
+      cursor: pointer;
+      user-select: none;
+    }
+    .knob-inner {
+      width: 3rem;
+      height: 3rem;
+      border-radius: var(--radius-full);
+      background-color: var(--color-background);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+}

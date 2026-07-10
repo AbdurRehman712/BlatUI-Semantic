@@ -1,0 +1,40 @@
+/* ============================================================
+ * BlatUI Semantic — * FOOTER (footer)
+ * Auto-generated from semantic-base.css (line 1730)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .footer {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 2.5rem;
+      padding: 2.5rem 1rem;
+      font-size: 0.875rem;
+      background-color: var(--color-background);
+      border-top: 1px solid var(--color-border);
+    }
+  
+    .footer-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-muted-foreground);
+      margin-bottom: 0.75rem;
+    }
+  
+    .footer-center {
+      place-items: center;
+      text-align: center;
+    }
+  
+    .footer a {
+      color: var(--color-foreground);
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+}

@@ -1,0 +1,36 @@
+/* ============================================================
+ * BlatUI Semantic — * CAROUSEL (carousel)
+ * Auto-generated from semantic-base.css (line 2173)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      gap: 1rem;
+    }
+  
+    .carousel-item {
+      flex: none;
+      scroll-snap-align: start;
+    }
+  
+    .carousel-center .carousel-item {
+      scroll-snap-align: center;
+    }
+  
+    .carousel-end .carousel-item {
+      scroll-snap-align: end;
+    }
+  
+    .carousel-vertical {
+      flex-direction: column;
+      overflow-y: auto;
+      scroll-snap-type: y mandatory;
+    }
+}

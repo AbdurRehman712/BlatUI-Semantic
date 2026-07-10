@@ -1,0 +1,23 @@
+/* ============================================================
+ * BlatUI Semantic — * SPOTLIGHT CARD (spotlight-card)
+ * Auto-generated from semantic-base.css (line 5210)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .spotlight-card {
+      position: relative;
+      overflow: hidden;
+    }
+    .spotlight-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(600px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%), rgba(79, 70, 229, 0.1), transparent 40%);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 300ms ease;
+    }
+    .spotlight-card:hover::before { opacity: 1; }
+}

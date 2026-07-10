@@ -1,0 +1,24 @@
+/* ============================================================
+ * BlatUI Semantic — * BENTO GRID (bento-grid)
+ * Auto-generated from semantic-base.css (line 5290)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+    .bento-grid > :first-child { grid-column: span 2; grid-row: span 2; }
+    .bento-item {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: 1.5rem;
+      background-color: var(--color-card);
+      transition: box-shadow 200ms ease;
+    }
+    .bento-item:hover { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+}
