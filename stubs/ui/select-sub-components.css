@@ -1,0 +1,62 @@
+/* ============================================================
+ * BlatUI Semantic — * SELECT SUB-COMPONENTS
+ * Auto-generated from semantic-base.css (line 4644)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .select-content {
+      position: absolute;
+      z-index: 50;
+      width: 100%;
+      max-height: 16rem;
+      overflow-y: auto;
+      background-color: var(--color-popover);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      padding: 0.25rem;
+      margin-top: 0.25rem;
+    }
+    .select-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.875rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: background-color 150ms ease;
+    }
+    .select-item:hover,
+    .select-item.selected { background-color: var(--color-muted); }
+    .select-label {
+      padding: 0.375rem 0.75rem;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-muted-foreground);
+    }
+    .select-separator {
+      height: 1px;
+      background-color: var(--color-border);
+      margin: 0.25rem 0.5rem;
+    }
+    .select-group { padding: 0.25rem 0; }
+    .select-trigger {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      width: 100%;
+    }
+    .select-value {
+      flex: 1;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+}

@@ -1,0 +1,51 @@
+/* ============================================================
+ * BlatUI Semantic — * JOIN (join — button/input group)
+ * Auto-generated from semantic-base.css (line 1838)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .join {
+      display: flex;
+      align-items: stretch;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+  
+    .join > *:where(.btn, .input, .select) {
+      border-radius: 0;
+    }
+  
+    .join > *:first-child {
+      border-top-left-radius: var(--radius-md);
+      border-bottom-left-radius: var(--radius-md);
+    }
+  
+    .join > *:last-child {
+      border-top-right-radius: var(--radius-md);
+      border-bottom-right-radius: var(--radius-md);
+    }
+  
+    .join > * + * {
+      margin-left: -1px;
+    }
+  
+    .join-item {
+      border-radius: 0 !important;
+    }
+  
+    .join-vertical {
+      flex-direction: column;
+    }
+    .join-vertical > * + * {
+      margin-left: 0;
+      margin-top: -1px;
+    }
+    .join-vertical > *:first-child {
+      border-radius: var(--radius-md) var(--radius-md) 0 0;
+    }
+    .join-vertical > *:last-child {
+      border-radius: 0 0 var(--radius-md) var(--radius-md);
+    }
+}

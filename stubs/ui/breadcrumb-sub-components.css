@@ -1,0 +1,22 @@
+/* ============================================================
+ * BlatUI Semantic — * BREADCRUMB SUB-COMPONENTS
+ * Auto-generated from semantic-base.css (line 4702)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .breadcrumb-list { display: flex; align-items: center; gap: 0.5rem; list-style: none; padding: 0; margin: 0; }
+    .breadcrumb-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      color: var(--color-muted-foreground);
+    }
+    .breadcrumb-link { color: var(--color-primary); text-decoration: none; }
+    .breadcrumb-link:hover { text-decoration: underline; }
+    .breadcrumb-page { color: var(--color-foreground); font-weight: 500; }
+    .breadcrumb-separator { color: var(--color-muted-foreground); opacity: 0.4; }
+    .breadcrumb-ellipsis { color: var(--color-muted-foreground); cursor: default; padding: 0 0.25rem; }
+}

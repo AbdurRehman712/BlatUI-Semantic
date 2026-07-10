@@ -1,22 +1,17 @@
 /* ============================================================
  * BlatUI Semantic — * SCROLL AREA (scroll-area)
- * Auto-generated from semantic-base.css (line 5325)
+ * Auto-generated from semantic-base.css (line 5343)
  * ============================================================ */
 
 @reference "tailwindcss";
 
 @layer components {
-  .container {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 1rem;
-      padding-right: 1rem;
+  .scroll-area {
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-border) transparent;
     }
-    @media (min-width: 640px) { .container { max-width: 640px; } }
-    @media (min-width: 768px) { .container { max-width: 768px; } }
-    @media (min-width: 1024px) { .container { max-width: 1024px; } }
-    @media (min-width: 1280px) { .container { max-width: 1280px; } }
-    @media (min-width: 1536px) { .container { max-width: 1536px; } }
-    .container-fluid { max-width: 100%; }
+    .scroll-area::-webkit-scrollbar { width: 6px; }
+    .scroll-area::-webkit-scrollbar-track { background: transparent; }
+    .scroll-area::-webkit-scrollbar-thumb { background-color: var(--color-border); border-radius: var(--radius-full); }
 }

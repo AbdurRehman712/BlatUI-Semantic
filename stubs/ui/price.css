@@ -1,0 +1,17 @@
+/* ============================================================
+ * BlatUI Semantic — * PRICE (price)
+ * Auto-generated from semantic-base.css (line 5928)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .price { display: inline-flex; align-items: baseline; gap: 0.25rem; }
+    .price-amount { font-size: 1.5rem; font-weight: 700; }
+    .price-currency { font-size: 1rem; font-weight: 600; color: var(--color-muted-foreground); }
+    .price-original { text-decoration: line-through; color: var(--color-muted-foreground); font-size: 1rem; }
+    .price-sale { color: var(--color-error); }
+    .price-sm .price-amount { font-size: 1.125rem; }
+    .price-sm .price-currency { font-size: 0.8125rem; }
+    .price-lg .price-amount { font-size: 2rem; }
+}

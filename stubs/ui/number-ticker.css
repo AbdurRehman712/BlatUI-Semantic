@@ -1,0 +1,13 @@
+/* ============================================================
+ * BlatUI Semantic — * NUMBER TICKER (number-ticker)
+ * Auto-generated from semantic-base.css (line 5096)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .number-ticker {
+      font-variant-numeric: tabular-nums;
+      display: inline-block;
+    }
+}

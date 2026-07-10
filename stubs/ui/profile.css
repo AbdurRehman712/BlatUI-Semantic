@@ -1,0 +1,19 @@
+/* ============================================================
+ * BlatUI Semantic — * PROFILE (profile)
+ * Auto-generated from semantic-base.css (line 5862)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .profile {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem;
+      border-radius: var(--radius-lg);
+    }
+    .profile-info { display: flex; flex-direction: column; }
+    .profile-name { font-weight: 600; font-size: 0.9375rem; }
+    .profile-bio { font-size: 0.8125rem; color: var(--color-muted-foreground); }
+}

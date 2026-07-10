@@ -1,0 +1,21 @@
+/* ============================================================
+ * BlatUI Semantic — * PRESENCE (presence) — online/away/busy indicator
+ * Auto-generated from semantic-base.css (line 5694)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .presence {
+      display: inline-block;
+      width: 0.625rem;
+      height: 0.625rem;
+      border-radius: var(--radius-full);
+      background-color: var(--color-muted-foreground);
+      border: 2px solid var(--color-background);
+    }
+    .presence[data-status="online"] { background-color: var(--color-success); }
+    .presence[data-status="away"] { background-color: var(--color-warning); }
+    .presence[data-status="busy"] { background-color: var(--color-error); }
+    .presence[data-status="offline"] { background-color: var(--color-muted-foreground); }
+}

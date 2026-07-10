@@ -1,0 +1,17 @@
+/* ============================================================
+ * BlatUI Semantic — * BRAND (brand) — logo/brand display
+ * Auto-generated from semantic-base.css (line 5792)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      font-size: 1.125rem;
+    }
+    .brand-logo { width: 2rem; height: 2rem; flex-shrink: 0; }
+}

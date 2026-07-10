@@ -90,7 +90,7 @@ Edit `config/blatui.php` and add this registry URL:
 ```php
 'registries' => [
     'default' => 'https://blatui.remix-it.com/registry',
-    'semantic' => 'https://raw.githubusercontent.com/remix-ui/blatui-semantic/main/index.json',
+    'semantic' => 'https://raw.githubusercontent.com/AbdurRehman712/BlatUI-Semantic/main/index.json',
 ],
 ```
 

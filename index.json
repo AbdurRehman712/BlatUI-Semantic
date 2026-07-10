@@ -1,8 +1,8 @@
 {
-    "$schema": "https://blatui.remix-it.com/schema.json",
+    "$schema": "https://ui.shadcn.com/schema/registry.json",
     "name": "blatui-semantic",
     "description": "Complete FlyonUI-inspired semantic component registry for BlatUI. All 180 components mapped to pure semantic CSS classes with Alpine.js interactivity.",
-    "homepage": "https://github.com/your-org/blatui-semantic",
+    "homepage": "https://github.com/AbdurRehman712/BlatUI-Semantic",
     "components": [
         {
             "name": "accent",
@@ -228,6 +228,11 @@
                     "path": "ui/audio-player.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/audio-player.blade.php"
+                },
+                {
+                    "path": "ui/audio-player.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/audio-player.css"
                 }
             ]
         },
@@ -463,6 +468,11 @@
                     "path": "ui/bottom-navigation.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/bottom-navigation.blade.php"
+                },
+                {
+                    "path": "ui/navbar.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/navbar.css"
                 }
             ]
         },
@@ -499,6 +509,11 @@
                     "path": "ui/brand.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/brand.blade.php"
+                },
+                {
+                    "path": "ui/brand.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/brand.css"
                 }
             ]
         },
@@ -897,6 +912,11 @@
                     "path": "ui/color-picker.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/color-picker.blade.php"
+                },
+                {
+                    "path": "ui/color-picker.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/color-picker.css"
                 }
             ]
         },
@@ -1054,6 +1074,11 @@
                     "path": "ui/confetti.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/confetti.blade.php"
+                },
+                {
+                    "path": "ui/confetti.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/confetti.css"
                 }
             ]
         },
@@ -1422,6 +1447,11 @@
                     "path": "ui/diff-viewer.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/diff-viewer.blade.php"
+                },
+                {
+                    "path": "ui/diff-viewer.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/diff-viewer.css"
                 }
             ]
         },
@@ -1482,6 +1512,11 @@
                     "path": "ui/dot-pattern.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/dot-pattern.blade.php"
+                },
+                {
+                    "path": "ui/dot-pattern.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/dot-pattern.css"
                 }
             ]
         },
@@ -1974,6 +2009,11 @@
                     "path": "ui/image.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/image.blade.php"
+                },
+                {
+                    "path": "ui/image.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/image.css"
                 }
             ]
         },
@@ -1992,6 +2032,11 @@
                     "path": "ui/infinite-scroll.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/infinite-scroll.blade.php"
+                },
+                {
+                    "path": "ui/infinite-scroll.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/infinite-scroll.css"
                 }
             ]
         },
@@ -2304,6 +2349,11 @@
                     "path": "ui/loading-overlay.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/loading-overlay.blade.php"
+                },
+                {
+                    "path": "ui/loading-overlay.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/loading-overlay.css"
                 }
             ]
         },
@@ -2371,6 +2421,11 @@
                     "path": "ui/masonry.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/masonry.blade.php"
+                },
+                {
+                    "path": "ui/masonry.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/masonry.css"
                 }
             ]
         },
@@ -2799,6 +2854,11 @@
                     "path": "ui/number-ticker.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/number-ticker.blade.php"
+                },
+                {
+                    "path": "ui/number-ticker.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/number-ticker.css"
                 }
             ]
         },
@@ -2873,6 +2933,11 @@
                     "path": "ui/page-header.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/page-header.blade.php"
+                },
+                {
+                    "path": "ui/page-header.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/page-header.css"
                 }
             ]
         },
@@ -3013,6 +3078,11 @@
                     "path": "ui/popover-trigger.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/popover-trigger.blade.php"
+                },
+                {
+                    "path": "ui/popover.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/popover.css"
                 }
             ]
         },
@@ -3028,6 +3098,11 @@
                     "path": "ui/presence.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/presence.blade.php"
+                },
+                {
+                    "path": "ui/presence.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/presence.css"
                 }
             ]
         },
@@ -3045,6 +3120,11 @@
                     "path": "ui/price.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/price.blade.php"
+                },
+                {
+                    "path": "ui/price.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/price.css"
                 }
             ]
         },
@@ -3089,6 +3169,11 @@
                     "path": "ui/profile.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/profile.blade.php"
+                },
+                {
+                    "path": "ui/profile.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/profile.css"
                 }
             ]
         },
@@ -3145,6 +3230,11 @@
                     "path": "ui/qr-code.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/qr-code.blade.php"
+                },
+                {
+                    "path": "ui/qr-code.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/qr-code.css"
                 }
             ]
         },
@@ -3675,6 +3765,11 @@
                     "path": "ui/signature-pad.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/signature-pad.blade.php"
+                },
+                {
+                    "path": "ui/signature-pad.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/signature-pad.css"
                 }
             ]
         },
@@ -3755,6 +3850,11 @@
                     "path": "ui/sparkline.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/sparkline.blade.php"
+                },
+                {
+                    "path": "ui/sparkline.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/sparkline.css"
                 }
             ]
         },
@@ -4267,6 +4367,11 @@
                     "path": "ui/tilt-card.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/tilt-card.blade.php"
+                },
+                {
+                    "path": "ui/tilt-card.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/tilt-card.css"
                 }
             ]
         },
@@ -4495,6 +4600,11 @@
                     "path": "ui/tree-table.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/tree-table.blade.php"
+                },
+                {
+                    "path": "ui/tree-table.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/tree-table.css"
                 }
             ]
         },
@@ -4510,6 +4620,11 @@
                     "path": "ui/tree-table-row.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/tree-table-row.blade.php"
+                },
+                {
+                    "path": "ui/tree-table.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/tree-table.css"
                 }
             ]
         },
@@ -4608,6 +4723,11 @@
                     "path": "ui/visually-hidden.blade.php",
                     "type": "registry:page",
                     "target": "resources/views/components/ui/visually-hidden.blade.php"
+                },
+                {
+                    "path": "ui/visually-hidden.css",
+                    "type": "registry:file",
+                    "target": "resources/css/vendor/blatui/ui/visually-hidden.css"
                 }
             ]
         }

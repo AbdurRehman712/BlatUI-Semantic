@@ -1,0 +1,14 @@
+/* ============================================================
+ * BlatUI Semantic — * INFINITE SCROLL (infinite-scroll)
+ * Auto-generated from semantic-base.css (line 5753)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .infinite-scroll { position: relative; }
+    .infinite-scroll-sentinel {
+      height: 1px;
+      visibility: hidden;
+    }
+}

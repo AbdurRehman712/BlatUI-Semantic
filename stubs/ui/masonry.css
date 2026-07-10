@@ -1,0 +1,19 @@
+/* ============================================================
+ * BlatUI Semantic — * MASONRY (masonry)
+ * Auto-generated from semantic-base.css (line 5310)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .masonry {
+      columns: 3 16rem;
+      column-gap: 1rem;
+    }
+    .masonry > * {
+      break-inside: avoid;
+      margin-bottom: 1rem;
+    }
+    .masonry-sm { columns: 2 12rem; }
+    .masonry-lg { columns: 4 20rem; }
+}

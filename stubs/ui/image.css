@@ -1,0 +1,15 @@
+/* ============================================================
+ * BlatUI Semantic — * IMAGE (image) — responsive image wrapper
+ * Auto-generated from semantic-base.css (line 5445)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .image {
+      display: flex;
+      overflow: hidden;
+      border-radius: var(--radius-md);
+    }
+    .image img { width: 100%; height: auto; object-fit: cover; }
+}

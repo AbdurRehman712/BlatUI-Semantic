@@ -50,6 +50,11 @@
     background-color: rgba(0, 0, 0, 0.6);
   }
 
+  /* Component-layer override (matches semantic-base.css line 3585) */
+  .dark .loading-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
   .dark .terminal {
     background-color: #11111b;
   }

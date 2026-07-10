@@ -1,21 +1,22 @@
 /* ============================================================
- * BlatUI Semantic — * HOVER CARD (hover-card)
- * Auto-generated from semantic-base.css (line 3197)
+ * BlatUI Semantic — * POPOVER (popover)
+ * Auto-generated from semantic-base.css (line 3179)
  * ============================================================ */
 
 @reference "tailwindcss";
 
 @layer components {
-  .hover-card { position: relative; display: inline-flex; }
-    .hover-card-content {
+  .popover { position: relative; display: inline-flex; }
+    .popover-content {
       position: absolute;
       z-index: 50;
-      min-width: 16rem;
+      min-width: 12rem;
+      max-width: 20rem;
       background-color: var(--color-popover);
       border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-      padding: 1rem;
+      padding: 0.75rem;
       font-size: 0.875rem;
     }
 }

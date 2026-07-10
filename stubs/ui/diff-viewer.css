@@ -1,0 +1,21 @@
+/* ============================================================
+ * BlatUI Semantic — * DIFF VIEWER (diff-viewer)
+ * Auto-generated from semantic-base.css (line 5607)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .diff-viewer {
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .diff-line { padding: 0.125rem 0.75rem; white-space: pre; }
+    .diff-line.added { background-color: color-mix(in srgb, var(--color-success) 15%, transparent); }
+    .diff-line.removed { background-color: color-mix(in srgb, var(--color-error) 15%, transparent); }
+    .diff-line.context { background-color: transparent; }
+}

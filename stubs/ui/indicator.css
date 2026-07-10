@@ -1,33 +1,46 @@
 /* ============================================================
- * BlatUI Semantic — * ITEM (generic list item with header/indicator/trailing)
- * Auto-generated from semantic-base.css (line 4561)
+ * BlatUI Semantic — * INDICATOR (indicator)
+ * Auto-generated from semantic-base.css (line 1885)
  * ============================================================ */
 
 @reference "tailwindcss";
 
 @layer components {
-  .item {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 0.625rem 0.75rem;
-      border-radius: var(--radius-md);
-      transition: background-color 150ms ease;
-      cursor: pointer;
+  .indicator {
+      position: relative;
+      display: inline-flex;
     }
-    .item:hover { background-color: var(--color-muted); }
-    .item-header { display: flex; flex-direction: column; flex: 1; min-width: 0; }
-    .item-title { font-size: 0.875rem; font-weight: 500; color: var(--color-foreground); }
-    .item-description { font-size: 0.75rem; color: var(--color-muted-foreground); }
-    .item-label { font-size: 0.8125rem; color: var(--color-muted-foreground); }
-    .item-indicator { flex-shrink: 0; }
-    .item-trailing {
-      margin-left: auto;
-      display: flex;
-      align-items: center;
-      gap: 0.25rem;
-      font-size: 0.75rem;
-      color: var(--color-muted-foreground);
+  
+    .indicator-item {
+      position: absolute;
+      z-index: 10;
+      top: -0.25rem;
+      right: -0.25rem;
+      transform: translate(0, 0);
     }
-    .item-content { padding: 0.5rem 0.75rem; font-size: 0.875rem; }
+  
+    .indicator-start .indicator-item { left: -0.25rem; right: auto; }
+    .indicator-center .indicator-item { left: 50%; right: auto; transform: translateX(-50%); }
+    .indicator-end .indicator-item { right: -0.25rem; left: auto; }
+  
+    .indicator-top .indicator-item { top: -0.25rem; bottom: auto; }
+    .indicator-middle .indicator-item { top: 50%; bottom: auto; transform: translateY(-50%); }
+    .indicator-bottom .indicator-item { bottom: -0.25rem; top: auto; }
+  
+    .indicator-start.indicator-middle .indicator-item { transform: translate(-50%, -50%); }
+    .indicator-center.indicator-middle .indicator-item { transform: translate(-50%, -50%); }
+    .indicator-end.indicator-middle .indicator-item { transform: translate(0, -50%); }
+  
+    .indicator-start.indicator-bottom .indicator-item { top: auto; }
+    .indicator-center.indicator-bottom .indicator-item { top: auto; }
+    .indicator-end.indicator-bottom .indicator-item { top: auto; }
+  
+    /* Vertical positioning */
+    .indicator-top.indicator-start .indicator-item { top: -0.25rem; left: -0.25rem; right: auto; bottom: auto; }
+    .indicator-top.indicator-center .indicator-item { top: -0.25rem; left: 50%; right: auto; bottom: auto; transform: translateX(-50%); }
+    .indicator-top.indicator-end .indicator-item { top: -0.25rem; right: -0.25rem; left: auto; bottom: auto; }
+  
+    .indicator-bottom.indicator-start .indicator-item { bottom: -0.25rem; left: -0.25rem; right: auto; top: auto; }
+    .indicator-bottom.indicator-center .indicator-item { bottom: -0.25rem; left: 50%; right: auto; top: auto; transform: translateX(-50%); }
+    .indicator-bottom.indicator-end .indicator-item { bottom: -0.25rem; right: -0.25rem; left: auto; top: auto; }
 }

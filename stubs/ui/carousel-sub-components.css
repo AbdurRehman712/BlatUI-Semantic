@@ -1,0 +1,33 @@
+/* ============================================================
+ * BlatUI Semantic — * CAROUSEL SUB-COMPONENTS
+ * Auto-generated from semantic-base.css (line 4775)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .carousel-content { display: flex; gap: 1rem; }
+    .carousel-next,
+    .carousel-previous {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: var(--radius-full);
+      background-color: var(--color-background);
+      border: 1px solid var(--color-border);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 150ms ease;
+      color: var(--color-foreground);
+    }
+    .carousel-next:hover,
+    .carousel-previous:hover { background-color: var(--color-muted); }
+    .carousel-previous { left: 0.5rem; }
+    .carousel-next { right: 0.5rem; }
+}

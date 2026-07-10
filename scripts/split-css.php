@@ -22,6 +22,10 @@
 $MONOLITH  = __DIR__ . '/../stubs/semantic-base.css';
 $UI_DIR    = __DIR__ . '/../stubs/ui';
 $INDEX     = __DIR__ . '/../index.json';
+$DARK      = __DIR__ . '/../stubs/dark.css';
+
+// ---- Flags ----
+$REBUNDLE = in_array('--rebundle', array_slice($argv, 1), true);
 
 // ---- Parse the monolith ----
 if (!file_exists($MONOLITH)) {
@@ -37,6 +41,84 @@ if ($lines === false) {
 
 // Helper: line content (no trailing whitespace)
 function ln(int $i): string { global $lines; $l = $lines[$i] ?? ''; return rtrim($l, "\r\n"); }
+
+/**
+ * Rebuild the monolithic semantic-base.css from the per-component
+ * stubs/ui/<slug>.css files.
+ *
+ * Strategy:
+ *  - Keep the original file's header (everything up to and including
+ *    the `@layer components {` opening line).
+ *  - For each parsed section, replace its body with the content read
+ *    from stubs/ui/<slug>.css (the @layer components wrapper is stripped).
+ *  - Keep everything from the `@layer utilities` block onward, but
+ *    regenerate it from stubs/dark.css so dark overrides stay in sync.
+ *
+ * @param string $monolith  Path to semantic-base.css (overwritten).
+ * @param string $uiDir     Directory containing per-component CSS files.
+ * @param string $dark      Path to dark.css (source of the utilities block).
+ * @param array  $sections  Parsed sections (with start/end line bounds).
+ * @param array  $lines     Original monolith lines (0-indexed).
+ */
+function rebundle(string $monolith, string $uiDir, string $dark, array $sections, array $lines): void
+{
+    // 1. Header: everything before the first component section's content.
+    $headerEnd = !empty($sections) ? $sections[0]['start'] : count($lines);
+    $out = '';
+    for ($i = 0; $i < $headerEnd; $i++) {
+        $out .= $lines[$i];
+    }
+
+    // 2. Component sections, rebuilt from per-component files.
+    foreach ($sections as $sec) {
+        $slug = $sec['slugs'][0];
+        $file = $uiDir . '/' . $slug . '.css';
+        $body = '';
+        if (file_exists($file)) {
+            $raw = file_get_contents($file);
+            // Strip the leading comment header + @reference line.
+            $raw = preg_replace('#^/\*.*?\*/\s*#s', '', $raw);
+            $raw = preg_replace('#^\s*@reference\s+"[^"]*";\s*#', '', $raw);
+            // Strip the @layer components { ... } wrapper (outermost).
+            if (preg_match('#@layer\s+components\s*\{(.*)\}\s*$#s', $raw, $m)) {
+                $body = trim($m[1]);
+            } else {
+                $body = trim($raw);
+            }
+        }
+        if ($body === '') {
+            // Fallback: keep the original section content verbatim.
+            fwrite(STDERR, "WARNING: missing or empty $file — keeping original section\n");
+            for ($i = $sec['start']; $i < $sec['end']; $i++) {
+                $out .= $lines[$i];
+            }
+            continue;
+        }
+        if ($body !== '') {
+            // Re-emit a clean section header comment block.
+            $out .= "  /* ------------------------------------------------------- */\n";
+            $out .= "  " . trim($sec['name']) . "\n";
+            $out .= "  /* ------------------------------------------------------- */\n";
+            $out .= $body . "\n\n";
+        }
+    }
+
+    // 3. Utilities / dark block, regenerated from dark.css.
+    $darkRaw = file_exists($dark) ? file_get_contents($dark) : '';
+    $darkBody = '';
+    if (preg_match('#@layer\s+utilities\s*\{(.*)\}\s*$#s', $darkRaw, $m)) {
+        $darkBody = trim($m[1]);
+    }
+    $out .= "\n  /* ============================================================\n";
+    $out .= "   * UTILITY LAYER\n";
+    $out .= "   * ============================================================ */\n";
+    $out .= "  @layer utilities {\n";
+    $out .= $darkBody !== '' ? $darkBody . "\n" : '';
+    $out .= "  }\n";
+    $out .= "}\n";
+
+    file_put_contents($monolith, $out);
+}
 
 // ---- Extract sections ----
 // A section is defined by a comment block containing a line:
@@ -63,7 +145,7 @@ while ($i < $totalLines) {
             // Match a real section header:  * BUTTON (btn)  or  * BUTTON (btn, btn-sm)
             // The NAME must be UPPERCASE words (not "Usage:"), and the slug list
             // must be the LAST parenthesized group on the line.
-            if (preg_match('/^\s+\*\s+[A-Z][A-Z0-9 \/-]*\(([a-z][a-z0-9,\s\/-]*)\)\s*$/', $hl, $m)) {
+            if (empty($slugs) && preg_match('/^\s+\*\s+[A-Z][A-Z0-9 &-\/]*\(([a-z][a-z0-9\/-]*)/', $hl, $m)) {
                 $nameLine = trim($hl);
                 // Parse slug list — split on comma, strip whitespace
                 $raw = str_replace('/', ',', $m[1]); // separator/divider → separator, divider
@@ -71,9 +153,16 @@ while ($i < $totalLines) {
                 $slugs = array_filter($slugs, fn($s) => preg_match('/^[a-z][a-z0-9-]*$/', $s));
                 $slugs = array_values($slugs);
             }
+            // Slugless sub-component sections (e.g. "* MENU SUB-COMPONENTS")
+            // get a derived slug so they are still extracted & rebundled.
+            if (empty($slugs) && empty($nameLine) && preg_match('/^\s+\*\s+([A-Z][A-Z0-9 -]+)\s*$/', $hl, $m2)) {
+                $nameLine = trim($hl);
+                $slugs = [strtolower(str_replace(' ', '-', trim($m2[1])))];
+            }
             // Closing line of the header comment: `   * ---...--- */`
             // Use a regex instead of exact string match — dash counts vary.
-            if (preg_match('/^\s+\*\s+-{5,}\s*\*\/\s*$/', $hl)) {
+            // Only capture the FIRST closing (this section's own header).
+            if ($headerEnd < 0 && preg_match('/^\s+\*\s+-{5,}\s*\*\/\s*$/', $hl)) {
                 $headerEnd = $j + 1; // first line AFTER the header
             }
         }
@@ -110,12 +199,23 @@ while ($i < $totalLines) {
                     'name'    => $nameLine,
                     'line'    => $i + 1,
                     'content' => $content,
+                    'start'   => $contentStart,
+                    'end'     => $contentEnd,
                 ];
             }
         }
     }
 
     $i++;
+}
+
+// ---- (Optional) Rebundle: rebuild the monolith from per-component files ----
+if ($REBUNDLE) {
+    rebundle($MONOLITH, $UI_DIR, $DARK, $sections, $lines);
+    echo "\n✓ Rebuilt monolith: $MONOLITH\n";
+    echo "  Component sections were regenerated from stubs/ui/*.css\n";
+    echo "  Header (@theme) and @layer utilities (dark.css) were preserved.\n";
+    exit(0);
 }
 
 // ---- Write per-component CSS files ----

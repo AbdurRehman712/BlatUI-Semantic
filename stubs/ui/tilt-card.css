@@ -1,0 +1,14 @@
+/* ============================================================
+ * BlatUI Semantic — * TILT CARD (tilt-card)
+ * Auto-generated from semantic-base.css (line 5200)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .tilt-card {
+      transition: transform 100ms ease;
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+}

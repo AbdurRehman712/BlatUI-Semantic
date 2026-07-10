@@ -1,0 +1,20 @@
+/* ============================================================
+ * BlatUI Semantic — * COLOR PICKER (color-picker)
+ * Auto-generated from semantic-base.css (line 2504)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .color-picker {
+      width: 2.5rem;
+      height: 2.5rem;
+      padding: 0.25rem;
+      border: 1px solid var(--color-input);
+      border-radius: var(--radius-md);
+      background-color: var(--color-background);
+      cursor: pointer;
+    }
+    .color-picker::-webkit-color-swatch-wrapper { padding: 0; }
+    .color-picker::-webkit-color-swatch { border: none; border-radius: var(--radius-sm); }
+}

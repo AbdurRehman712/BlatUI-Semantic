@@ -1,0 +1,16 @@
+/* ============================================================
+ * BlatUI Semantic — * SPARKLINE (sparkline)
+ * Auto-generated from semantic-base.css (line 5526)
+ * ============================================================ */
+
+@reference "tailwindcss";
+
+@layer components {
+  .sparkline { display: inline-flex; align-items: flex-end; gap: 2px; }
+    .sparkline-bar {
+      width: 4px;
+      background-color: var(--color-primary);
+      border-radius: 1px 1px 0 0;
+      transition: height 200ms ease;
+    }
+}
